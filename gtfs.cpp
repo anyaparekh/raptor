@@ -5,6 +5,7 @@
 #include <unordered_set>
 #include <cmath>
 #include <algorithm>
+#include <omp.h>
 #include "csv.hpp"
 
 using namespace std;
@@ -44,76 +45,100 @@ double get_walking_distance(double lat1, double lon1, double lat2, double lon2) 
 
 void load_stop_times(const string &path) {
     csv::CSVReader reader(path);
+    vector<csv::CSVRow> rows;
+    for (auto& row : reader) {
+        rows.push_back(row);
+    }
+    df_stop_times.resize(rows.size());
 
-    for (auto &row : reader) {
+    #pragma omp parallel for num_threads(4)
+    for (int i = 0; i < rows.size(); ++i) {
         StopTimeHeaders entry;
 
-        entry.trip_id = row["trip_id"].get<>();
-        entry.arrival_time = row["arrival_time"].get<>();
-        entry.departure_time = row["departure_time"].get<>();
-        entry.stop_id = row["stop_id"].get<int>();
-        entry.stop_sequence = row["stop_sequence"].get<int>();
-        entry.stop_headsign = row["stop_headsign"].get<>();
-        entry.pickup_type = row["pickup_type"].get<>();
-        entry.shape_dist_traveled = row["shape_dist_traveled"].get<>();
+        entry.trip_id = rows[i]["trip_id"].get<>();
+        entry.arrival_time = rows[i]["arrival_time"].get<>();
+        entry.departure_time = rows[i]["departure_time"].get<>();
+        entry.stop_id = rows[i]["stop_id"].get<int>();
+        entry.stop_sequence = rows[i]["stop_sequence"].get<int>();
+        entry.stop_headsign = rows[i]["stop_headsign"].get<>();
+        entry.pickup_type = rows[i]["pickup_type"].get<>();
+        entry.shape_dist_traveled = rows[i]["shape_dist_traveled"].get<>();
 
-        df_stop_times.push_back(entry);
+        df_stop_times[i] = move(entry);
     }
 }
 
 void load_trips(const string &path) {
     csv::CSVReader reader(path);
+    vector<csv::CSVRow> rows;
+    for (auto& row : reader) {
+        rows.push_back(row);
+    }
+    df_trips.resize(rows.size());
 
-    for (auto &row : reader) {
+    #pragma omp parallel for num_threads(4)
+    for (size_t i = 0; i < rows.size(); ++i) {
         TripHeaders entry;
-        entry.route_id  = row["route_id"].get<>();
-        entry.service_id = row["service_id"].get<>();
-        entry.trip_id = row["trip_id"].get<>();
-        entry.direction_id = row["direction_id"].get<>();
-        entry.block_id = row["block_id"].get<>();
-        entry.shape_id = row["shape_id"].get<>();
-        entry.direction = row["direction"].get<>();
-        entry.wheelchair_accessible = row["wheelchair_accessible"].get<>();
-        entry.schd_trip_id = row["schd_trip_id"].get<>();
+        entry.route_id  = rows[i]["route_id"].get<>();
+        entry.service_id = rows[i]["service_id"].get<>();
+        entry.trip_id = rows[i]["trip_id"].get<>();
+        entry.direction_id = rows[i]["direction_id"].get<>();
+        entry.block_id = rows[i]["block_id"].get<>();
+        entry.shape_id = rows[i]["shape_id"].get<>();
+        entry.direction = rows[i]["direction"].get<>();
+        entry.wheelchair_accessible = rows[i]["wheelchair_accessible"].get<>();
+        entry.schd_trip_id = rows[i]["schd_trip_id"].get<>();
 
-        df_trips.push_back(entry);
+        df_trips[i] = move(entry);
     }
 }
 
 void load_routes(const string &path) {
     csv::CSVReader reader(path);
+    vector<csv::CSVRow> rows;
+    for (auto& row : reader) {
+        rows.push_back(row);
+    }
+    df_routes.resize(rows.size());
 
-    for (auto &row : reader) {
+    #pragma omp parallel for num_threads(4)
+    for (size_t i = 0; i < rows.size(); ++i) {
         RouteHeaders entry;
-        entry.route_id = row["route_id"].get<>();
-        entry.route_short_name = row["route_short_name"].get<>();
-        entry.route_long_name = row["route_long_name"].get<>();
-        entry.route_type = row["route_type"].get<>();
-        entry.route_url = row["route_url"].get<>();
-        entry.route_color = row["route_color"].get<>();
-        entry.route_text_color = row["route_text_color"].get<>();
+        entry.route_id = rows[i]["route_id"].get<>();
+        entry.route_short_name = rows[i]["route_short_name"].get<>();
+        entry.route_long_name = rows[i]["route_long_name"].get<>();
+        entry.route_type = rows[i]["route_type"].get<>();
+        entry.route_url = rows[i]["route_url"].get<>();
+        entry.route_color = rows[i]["route_color"].get<>();
+        entry.route_text_color = rows[i]["route_text_color"].get<>();
 
-        df_routes.push_back(entry);
+        df_routes[i] = move(entry);
     }
 }
 
 void load_stops(const string &path) {
     csv::CSVReader reader(path);
+    vector<csv::CSVRow> rows;
+    for (auto& row : reader) {
+        rows.push_back(row);
+    }
+    df_stops.resize(rows.size());
 
-    for (auto &row : reader) {
+    #pragma omp parallel for num_threads(4)
+    for (size_t i = 0; i < rows.size(); ++i) {
         StopHeaders entry;
 
-        entry.stop_id   = row["stop_id"].get<int>();
-        entry.stop_code = row["stop_code"].get<>();
-        entry.stop_name = row["stop_name"].get<>();
-        entry.stop_desc = row["stop_desc"].get<>();
-        entry.stop_lat  = row["stop_lat"].get<double>();
-        entry.stop_lon  = row["stop_lon"].get<double>();
-        entry.location_type = row["location_type"].get<>();
-        entry.parent_station = row["parent_station"].get<>();
-        entry.wheelchair_boarding = row["wheelchair_boarding"].get<>();
+        entry.stop_id = rows[i]["stop_id"].get<int>();
+        entry.stop_code = rows[i]["stop_code"].get<>();
+        entry.stop_name = rows[i]["stop_name"].get<>();
+        entry.stop_desc = rows[i]["stop_desc"].get<>();
+        entry.stop_lat = rows[i]["stop_lat"].get<double>();
+        entry.stop_lon = rows[i]["stop_lon"].get<double>();
+        entry.location_type = rows[i]["location_type"].get<>();
+        entry.parent_station = rows[i]["parent_station"].get<>();
+        entry.wheelchair_boarding = rows[i]["wheelchair_boarding"].get<>();
 
-        df_stops.push_back(entry);
+        df_stops[i] = move(entry);
     }
 }
 
@@ -122,10 +147,11 @@ static vector<MergedRow> merge_stop_times_trips() {
     for (auto &t : df_trips)
         trip_to_route[t.trip_id] = t.route_id;
 
-    vector<MergedRow> merged;
-    merged.reserve(df_stop_times.size());
+    vector<MergedRow> merged(df_stop_times.size());
 
-    for (auto &st : df_stop_times) {
+    #pragma omp parallel for num_threads(4)
+    for (size_t i = 0; i < df_stop_times.size(); ++i) {
+        auto &st = df_stop_times[i];
         MergedRow entry;
         entry.trip_id = st.trip_id;
         entry.route_id = trip_to_route[st.trip_id];
@@ -133,7 +159,7 @@ static vector<MergedRow> merge_stop_times_trips() {
         entry.stop_sequence = st.stop_sequence;
         entry.arrival_time = st.arrival_time;
         entry.departure_time = st.departure_time;
-        merged.push_back(entry);
+        merged[i] = move(entry);
     }
     return merged;
 }
@@ -141,24 +167,16 @@ static vector<MergedRow> merge_stop_times_trips() {
 void build_route_trips() {
     vector<MergedRow> merged = merge_stop_times_trips();
 
-    sort(merged.begin(), merged.end(),
-         [](auto &a, auto &b){
-            if (a.route_id != b.route_id) return a.route_id < b.route_id;
-            if (a.trip_id != b.trip_id) return a.trip_id < b.trip_id;
-            return a.stop_sequence < b.stop_sequence;
-         });
-
-    for (auto &mr : merged) {
-        auto &vec = RouteStops[mr.route_id];
-        if (find(vec.begin(), vec.end(), mr.stop_id) == vec.end())
-            vec.push_back(mr.stop_id);
+    unordered_map<string, unordered_set<int>> route_stops_seen;
+    for (auto &row : merged) {
+        if (route_stops_seen[row.route_id].insert(row.stop_id).second) {
+            RouteStops[row.route_id].push_back(row.stop_id);
+        }
+        StopRoutes[row.stop_id].insert(row.route_id);
     }
 
     for (auto &t : df_trips)
         RouteTrips[t.route_id].push_back(t.trip_id);
-
-    for (auto &mr : merged)
-        StopRoutes[mr.stop_id].insert(mr.route_id);
 }
 
 void build_trips() {
@@ -175,28 +193,37 @@ void build_trips() {
         Trips[t.trip_id] = entry;
     }
     
-    sort(df_stop_times.begin(), df_stop_times.end(),
-         [](auto &a, auto &b){
-            if (a.trip_id != b.trip_id) return a.trip_id < b.trip_id;
-            return a.stop_sequence < b.stop_sequence;
-         });
-
-    string cur_trip = "";
-    unordered_map<int,pair<int,int>> stops_dict;
-
-    for (auto &row : df_stop_times) {
-        if (row.trip_id != cur_trip && cur_trip != "") {
-            Trips[cur_trip].stops = std::move(stops_dict);
-            stops_dict.clear();
-        }
-        cur_trip = row.trip_id;
-        stops_dict[row.stop_id] = {
-            gtfs_time_to_seconds(row.arrival_time),
-            gtfs_time_to_seconds(row.departure_time)
-        };
+    // create an map: trip_id -> stop_time indices (tldr group by trip_id) 
+    unordered_map<string, vector<size_t>> trip_to_indices;
+    trip_to_indices.reserve(Trips.size());
+    
+    for (size_t i = 0; i < df_stop_times.size(); ++i) {
+        trip_to_indices[df_stop_times[i].trip_id].push_back(i);
     }
-    if (cur_trip != "")
-        Trips[cur_trip].stops = std::move(stops_dict);
+    
+    // can't parallelize unordered_map, so converting to vector of pairs instead
+    vector<pair<string, vector<size_t>>> trip_groups;
+    for (auto &kv : trip_to_indices) {
+        trip_groups.push_back(pair<string, vector<size_t>>(move(kv.first), move(kv.second)));
+    }
+    
+    #pragma omp parallel for num_threads(4)
+    for (size_t i = 0; i < trip_groups.size(); ++i) {
+        auto &[trip_id, indices] = trip_groups[i];
+        
+        unordered_map<int, pair<int,int>> stops_dict;
+        stops_dict.reserve(indices.size());
+        
+        for (size_t idx : indices) {
+            auto &row = df_stop_times[idx];
+            stops_dict[row.stop_id] = {
+                gtfs_time_to_seconds(row.arrival_time),
+                gtfs_time_to_seconds(row.departure_time)
+            };
+        }
+        
+        Trips[trip_id].stops = move(stops_dict);
+    }
 }
 
 void build_transfers() {
@@ -207,23 +234,35 @@ void build_transfers() {
     for (auto &p : StopCoords)
         stop_ids.push_back(p.first);
 
-    sort(stop_ids.begin(), stop_ids.end());
+    vector<unordered_map<int, vector<pair<int,int>>>> thread_maps(4);
+    #pragma omp parallel num_threads(4)
+    {
+        int tid = omp_get_thread_num();
+        auto &local_map = thread_maps[tid];
 
-    for (size_t i = 0; i < stop_ids.size(); ++i) {
-        int s1 = stop_ids[i];
-        auto &c1 = StopCoords[s1];
+        #pragma omp for schedule(dynamic)
+        for (size_t i = 0; i < stop_ids.size(); ++i) {
+            int s1 = stop_ids[i];
+            auto &c1 = StopCoords[s1];
 
-        for (size_t j = i + 1; j < stop_ids.size(); ++j) {
-            int s2 = stop_ids[j];
-            auto &c2 = StopCoords[s2];
+            for (size_t j = i + 1; j < stop_ids.size(); ++j) {
+                int s2 = stop_ids[j];
+                auto &c2 = StopCoords[s2];
 
-            double dist = get_walking_distance(c1.first, c1.second, c2.first, c2.second);
+                double dist = get_walking_distance(c1.first, c1.second, c2.first, c2.second);
 
-            if (dist <= 1500.0) {
-                int walk = int(dist / 1.4);
-                Transfers[s1].push_back({s2, walk});
-                Transfers[s2].push_back({s1, walk});
+                if (dist <= 1500.0) {
+                    int walk = int(dist / 1.4);
+                    local_map[s1].push_back({s2, walk});
+                    local_map[s2].push_back({s1, walk});
+                }
             }
+        }
+    }
+    for (auto &map : thread_maps) {
+        for (auto &p : map) {
+            auto &transfer = Transfers[p.first];
+            transfer.insert(transfer.end(), p.second.begin(), p.second.end());
         }
     }
 }

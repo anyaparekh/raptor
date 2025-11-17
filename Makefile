@@ -1,5 +1,5 @@
 FUNC := g++
-FLAGS := -O3 -lm -g -Werror -lzip
+FLAGS := -O3 -lm -g -Werror -lzip -fopenmp
 
 CPP_FILES := main.cpp gtfs.cpp raptor.cpp
 OUT := main.exe
