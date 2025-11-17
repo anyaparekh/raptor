@@ -1,0 +1,2447 @@
+Source stop: 17442
+Dest stop: 6579
+Departure time: 17:36:20
+Arrival time: 18:14:05
+Transfers: 3
+
+1 - WALK:
+Walk from stop 17442 to stop 4452
+Start: 17:36:20, End: 17:45:41
+Walking time: 9 min 21 s
+
+2 - WALK:
+Walk from stop 4452 to stop 30215
+Start: 17:45:41, End: 17:54:56
+Walking time: 9 min 15 s
+
+3 - BUS/TRAIN:
+Board stop 30215; Get down at stop 30141
+Start: 17:56:00, End: 18:08:00
+Transit time: 12 min 0 s
+
+4 - WALK:
+Walk from stop 30141 to stop 6579
+Start: 18:08:00, End: 18:14:05
+Walking time: 6 min 5 s
+
+============================================
+
+Source stop: 11478
+Dest stop: 887
+Departure time: 12:41:52
+Arrival time: 14:10:03
+Transfers: 4
+
+1 - WALK:
+Walk from stop 11478 to stop 4800
+Start: 12:41:52, End: 12:59:40
+Walking time: 17 min 48 s
+
+2 - BUS/TRAIN:
+Board stop 4800; Get down at stop 17037
+Start: 13:01:54, End: 13:33:10
+Transit time: 31 min 16 s
+
+3 - WALK:
+Walk from stop 17037 to stop 30248
+Start: 13:33:10, End: 13:34:21
+Walking time: 1 min 11 s
+
+4 - BUS/TRAIN:
+Board stop 30248; Get down at stop 30112
+Start: 13:40:00, End: 13:52:30
+Transit time: 12 min 30 s
+
+5 - WALK:
+Walk from stop 30112 to stop 887
+Start: 13:52:30, End: 14:10:03
+Walking time: 17 min 33 s
+
+============================================
+
+Source stop: 17597
+Dest stop: 14178
+Departure time: 11:21:44
+No path found.
+============================================
+
+Source stop: 480
+Dest stop: 9446
+Departure time: 15:36:01
+Arrival time: 17:23:35
+Transfers: 3
+
+1 - WALK:
+Walk from stop 480 to stop 26
+Start: 15:36:01, End: 15:48:56
+Walking time: 12 min 55 s
+
+2 - BUS/TRAIN:
+Board stop 26; Get down at stop 73
+Start: 15:53:24, End: 16:26:58
+Transit time: 33 min 34 s
+
+3 - BUS/TRAIN:
+Board stop 73; Get down at stop 7070
+Start: 16:33:19, End: 17:17:35
+Transit time: 44 min 16 s
+
+4 - WALK:
+Walk from stop 7070 to stop 9446
+Start: 17:17:35, End: 17:23:35
+Walking time: 6 min 0 s
+
+============================================
+
+Source stop: 6691
+Dest stop: 15028
+Departure time: 12:34:15
+Arrival time: 15:42:50
+Transfers: 4
+
+1 - BUS/TRAIN:
+Board stop 6691; Get down at stop 593
+Start: 12:42:03, End: 13:21:34
+Transit time: 39 min 31 s
+
+2 - BUS/TRAIN:
+Board stop 593; Get down at stop 18630
+Start: 13:26:43, End: 14:52:09
+Transit time: 85 min 26 s
+
+3 - WALK:
+Walk from stop 18630 to stop 3507
+Start: 14:52:09, End: 15:09:46
+Walking time: 17 min 37 s
+
+4 - WALK:
+Walk from stop 3507 to stop 3500
+Start: 15:09:46, End: 15:26:32
+Walking time: 16 min 46 s
+
+5 - WALK:
+Walk from stop 3500 to stop 15028
+Start: 15:26:32, End: 15:42:50
+Walking time: 16 min 18 s
+
+============================================
+
+Source stop: 1011
+Dest stop: 17643
+Departure time: 17:06:29
+Arrival time: 18:40:27
+Transfers: 4
+
+1 - WALK:
+Walk from stop 1011 to stop 30174
+Start: 17:06:29, End: 17:13:05
+Walking time: 6 min 36 s
+
+2 - BUS/TRAIN:
+Board stop 30174; Get down at stop 30089
+Start: 17:15:00, End: 18:17:30
+Transit time: 62 min 30 s
+
+3 - WALK:
+Walk from stop 30089 to stop 14008
+Start: 18:17:30, End: 18:18:02
+Walking time: 0 min 32 s
+
+4 - BUS/TRAIN:
+Board stop 14008; Get down at stop 17640
+Start: 18:20:00, End: 18:39:42
+Transit time: 19 min 42 s
+
+5 - WALK:
+Walk from stop 17640 to stop 17643
+Start: 18:39:42, End: 18:40:27
+Walking time: 0 min 45 s
+
+============================================
+
+Source stop: 7314
+Dest stop: 633
+Departure time: 15:49:53
+No path found.
+============================================
+
+Source stop: 9064
+Dest stop: 3843
+Departure time: 16:12:25
+Arrival time: 17:11:31
+Transfers: 4
+
+1 - BUS/TRAIN:
+Board stop 9064; Get down at stop 9074
+Start: 16:17:00, End: 16:23:14
+Transit time: 6 min 14 s
+
+2 - WALK:
+Walk from stop 9074 to stop 6739
+Start: 16:23:14, End: 16:31:29
+Walking time: 8 min 15 s
+
+3 - WALK:
+Walk from stop 6739 to stop 268
+Start: 16:31:29, End: 16:43:34
+Walking time: 12 min 5 s
+
+4 - WALK:
+Walk from stop 268 to stop 10251
+Start: 16:43:34, End: 16:55:50
+Walking time: 12 min 16 s
+
+5 - WALK:
+Walk from stop 10251 to stop 3843
+Start: 16:55:50, End: 17:11:31
+Walking time: 15 min 41 s
+
+============================================
+
+Source stop: 30063
+Dest stop: 5468
+Departure time: 13:23:08
+Arrival time: 14:13:18
+Transfers: 3
+
+1 - WALK:
+Walk from stop 30063 to stop 18358
+Start: 13:23:08, End: 13:40:21
+Walking time: 17 min 13 s
+
+2 - WALK:
+Walk from stop 18358 to stop 5474
+Start: 13:40:21, End: 13:57:46
+Walking time: 17 min 25 s
+
+3 - WALK:
+Walk from stop 5474 to stop 17014
+Start: 13:57:46, End: 14:00:15
+Walking time: 2 min 29 s
+
+4 - WALK:
+Walk from stop 17014 to stop 5468
+Start: 14:00:15, End: 14:13:18
+Walking time: 13 min 3 s
+
+============================================
+
+Source stop: 9226
+Dest stop: 18103
+Departure time: 13:12:13
+No path found.
+============================================
+
+Source stop: 7674
+Dest stop: 9205
+Departure time: 14:23:31
+Arrival time: 15:07:15
+Transfers: 4
+
+1 - WALK:
+Walk from stop 7674 to stop 5823
+Start: 14:23:31, End: 14:26:01
+Walking time: 2 min 30 s
+
+2 - WALK:
+Walk from stop 5823 to stop 17595
+Start: 14:26:01, End: 14:27:41
+Walking time: 1 min 40 s
+
+3 - WALK:
+Walk from stop 17595 to stop 5827
+Start: 14:27:41, End: 14:37:12
+Walking time: 9 min 31 s
+
+4 - WALK:
+Walk from stop 5827 to stop 5158
+Start: 14:37:12, End: 14:53:50
+Walking time: 16 min 38 s
+
+5 - WALK:
+Walk from stop 5158 to stop 9205
+Start: 14:53:50, End: 15:07:15
+Walking time: 13 min 25 s
+
+============================================
+
+Source stop: 241
+Dest stop: 10629
+Departure time: 15:35:08
+Arrival time: 16:36:37
+Transfers: 2
+
+1 - WALK:
+Walk from stop 241 to stop 9032
+Start: 15:35:08, End: 15:52:44
+Walking time: 17 min 36 s
+
+2 - BUS/TRAIN:
+Board stop 9032; Get down at stop 12851
+Start: 15:55:54, End: 16:31:29
+Transit time: 35 min 35 s
+
+3 - WALK:
+Walk from stop 12851 to stop 10629
+Start: 16:31:29, End: 16:36:37
+Walking time: 5 min 8 s
+
+============================================
+
+Source stop: 15450
+Dest stop: 12884
+Departure time: 17:31:19
+No path found.
+============================================
+
+Source stop: 11416
+Dest stop: 8142
+Departure time: 10:27:58
+Arrival time: 12:54:24
+Transfers: 4
+
+1 - WALK:
+Walk from stop 11416 to stop 11305
+Start: 10:27:58, End: 10:44:55
+Walking time: 16 min 57 s
+
+2 - BUS/TRAIN:
+Board stop 11305; Get down at stop 11330
+Start: 10:51:43, End: 11:10:56
+Transit time: 19 min 13 s
+
+3 - WALK:
+Walk from stop 11330 to stop 8982
+Start: 11:10:56, End: 11:28:16
+Walking time: 17 min 20 s
+
+4 - BUS/TRAIN:
+Board stop 8982; Get down at stop 12843
+Start: 11:29:14, End: 12:41:58
+Transit time: 72 min 44 s
+
+5 - WALK:
+Walk from stop 12843 to stop 8142
+Start: 12:41:58, End: 12:54:24
+Walking time: 12 min 26 s
+
+============================================
+
+Source stop: 14260
+Dest stop: 11917
+Departure time: 10:50:29
+Arrival time: 11:20:13
+Transfers: 2
+
+1 - WALK:
+Walk from stop 14260 to stop 18015
+Start: 10:50:29, End: 11:07:22
+Walking time: 16 min 53 s
+
+2 - BUS/TRAIN:
+Board stop 18015; Get down at stop 11869
+Start: 11:10:44, End: 11:19:56
+Transit time: 9 min 12 s
+
+3 - WALK:
+Walk from stop 11869 to stop 11917
+Start: 11:19:56, End: 11:20:13
+Walking time: 0 min 17 s
+
+============================================
+
+Source stop: 18645
+Dest stop: 17143
+Departure time: 15:23:42
+Arrival time: 16:26:35
+Transfers: 2
+
+1 - WALK:
+Walk from stop 18645 to stop 30265
+Start: 15:23:42, End: 15:36:34
+Walking time: 12 min 52 s
+
+2 - BUS/TRAIN:
+Board stop 30265; Get down at stop 30210
+Start: 15:37:00, End: 16:09:30
+Transit time: 32 min 30 s
+
+3 - WALK:
+Walk from stop 30210 to stop 17143
+Start: 16:09:30, End: 16:26:35
+Walking time: 17 min 5 s
+
+============================================
+
+Source stop: 11467
+Dest stop: 14347
+Departure time: 13:21:48
+Arrival time: 14:20:34
+Transfers: 4
+
+1 - WALK:
+Walk from stop 11467 to stop 11473
+Start: 13:21:48, End: 13:23:28
+Walking time: 1 min 40 s
+
+2 - BUS/TRAIN:
+Board stop 11473; Get down at stop 11484
+Start: 13:23:30, End: 13:34:29
+Transit time: 10 min 59 s
+
+3 - WALK:
+Walk from stop 11484 to stop 1701
+Start: 13:34:29, End: 13:51:54
+Walking time: 17 min 25 s
+
+4 - WALK:
+Walk from stop 1701 to stop 1693
+Start: 13:51:54, End: 14:08:43
+Walking time: 16 min 49 s
+
+5 - WALK:
+Walk from stop 1693 to stop 14347
+Start: 14:08:43, End: 14:20:34
+Walking time: 11 min 51 s
+
+============================================
+
+Source stop: 40490
+Dest stop: 8575
+Departure time: 16:37:05
+No path found.
+============================================
+
+Source stop: 18126
+Dest stop: 3226
+Departure time: 15:10:29
+Arrival time: 15:49:48
+Transfers: 2
+
+1 - WALK:
+Walk from stop 18126 to stop 30065
+Start: 15:10:29, End: 15:23:13
+Walking time: 12 min 44 s
+
+2 - BUS/TRAIN:
+Board stop 30065; Get down at stop 30178
+Start: 15:23:30, End: 15:42:30
+Transit time: 19 min 0 s
+
+3 - WALK:
+Walk from stop 30178 to stop 3226
+Start: 15:42:30, End: 15:49:48
+Walking time: 7 min 18 s
+
+============================================
+
+Source stop: 4537
+Dest stop: 10111
+Departure time: 17:24:32
+No path found.
+============================================
+
+Source stop: 14264
+Dest stop: 40140
+Departure time: 17:19:24
+Arrival time: 18:09:00
+Transfers: 3
+
+1 - WALK:
+Walk from stop 14264 to stop 30163
+Start: 17:19:24, End: 17:35:08
+Walking time: 15 min 44 s
+
+2 - WALK:
+Walk from stop 30163 to stop 30175
+Start: 17:35:08, End: 17:47:38
+Walking time: 12 min 30 s
+
+3 - BUS/TRAIN:
+Board stop 30175; Get down at stop 30026
+Start: 18:01:00, End: 18:09:00
+Transit time: 8 min 0 s
+
+4 - WALK:
+Walk from stop 30026 to stop 40140
+Start: 18:09:00, End: 18:09:00
+Walking time: 0 min 0 s
+
+============================================
+
+Source stop: 11604
+Dest stop: 9849
+Departure time: 15:41:45
+Arrival time: 16:29:54
+Transfers: 4
+
+1 - BUS/TRAIN:
+Board stop 11604; Get down at stop 9881
+Start: 15:43:24, End: 16:06:06
+Transit time: 22 min 42 s
+
+2 - WALK:
+Walk from stop 9881 to stop 14104
+Start: 16:06:06, End: 16:07:57
+Walking time: 1 min 51 s
+
+3 - WALK:
+Walk from stop 14104 to stop 14110
+Start: 16:07:57, End: 16:08:00
+Walking time: 0 min 3 s
+
+4 - BUS/TRAIN:
+Board stop 14110; Get down at stop 9906
+Start: 16:08:00, End: 16:21:55
+Transit time: 13 min 55 s
+
+5 - WALK:
+Walk from stop 9906 to stop 9849
+Start: 16:21:55, End: 16:29:54
+Walking time: 7 min 59 s
+
+============================================
+
+Source stop: 10265
+Dest stop: 5274
+Departure time: 12:01:05
+No path found.
+============================================
+
+Source stop: 851
+Dest stop: 9447
+Departure time: 17:34:55
+Arrival time: 20:21:10
+Transfers: 4
+
+1 - BUS/TRAIN:
+Board stop 851; Get down at stop 15276
+Start: 17:36:45, End: 18:37:19
+Transit time: 60 min 34 s
+
+2 - WALK:
+Walk from stop 15276 to stop 30126
+Start: 18:37:19, End: 18:53:27
+Walking time: 16 min 8 s
+
+3 - BUS/TRAIN:
+Board stop 30126; Get down at stop 30276
+Start: 18:58:00, End: 19:30:30
+Transit time: 32 min 30 s
+
+4 - WALK:
+Walk from stop 30276 to stop 9401
+Start: 19:30:30, End: 19:46:53
+Walking time: 16 min 23 s
+
+5 - BUS/TRAIN:
+Board stop 9401; Get down at stop 9447
+Start: 19:48:18, End: 20:21:10
+Transit time: 32 min 52 s
+
+============================================
+
+Source stop: 14573
+Dest stop: 13077
+Departure time: 13:56:47
+Arrival time: 15:04:43
+Transfers: 3
+
+1 - WALK:
+Walk from stop 14573 to stop 18027
+Start: 13:56:47, End: 14:14:00
+Walking time: 17 min 13 s
+
+2 - BUS/TRAIN:
+Board stop 18027; Get down at stop 10906
+Start: 14:15:47, End: 14:48:12
+Transit time: 32 min 25 s
+
+3 - BUS/TRAIN:
+Board stop 10906; Get down at stop 4153
+Start: 14:48:15, End: 15:04:30
+Transit time: 16 min 15 s
+
+4 - WALK:
+Walk from stop 4153 to stop 13077
+Start: 15:04:30, End: 15:04:43
+Walking time: 0 min 13 s
+
+============================================
+
+Source stop: 18604
+Dest stop: 18488
+Departure time: 13:46:07
+Arrival time: 14:49:27
+Transfers: 2
+
+1 - WALK:
+Walk from stop 18604 to stop 10878
+Start: 13:46:07, End: 14:03:41
+Walking time: 17 min 34 s
+
+2 - WALK:
+Walk from stop 10878 to stop 15867
+Start: 14:03:41, End: 14:20:43
+Walking time: 17 min 2 s
+
+3 - BUS/TRAIN:
+Board stop 15867; Get down at stop 18488
+Start: 14:20:45, End: 14:49:27
+Transit time: 28 min 42 s
+
+============================================
+
+Source stop: 12524
+Dest stop: 14751
+Departure time: 17:57:59
+Arrival time: 18:50:54
+Transfers: 3
+
+1 - WALK:
+Walk from stop 12524 to stop 8412
+Start: 17:57:59, End: 18:11:39
+Walking time: 13 min 40 s
+
+2 - BUS/TRAIN:
+Board stop 8412; Get down at stop 14592
+Start: 18:11:57, End: 18:27:42
+Transit time: 15 min 45 s
+
+3 - BUS/TRAIN:
+Board stop 14592; Get down at stop 15046
+Start: 18:31:12, End: 18:50:29
+Transit time: 19 min 17 s
+
+4 - WALK:
+Walk from stop 15046 to stop 14751
+Start: 18:50:29, End: 18:50:54
+Walking time: 0 min 25 s
+
+============================================
+
+Source stop: 14546
+Dest stop: 5092
+Departure time: 12:22:01
+Arrival time: 13:22:40
+Transfers: 3
+
+1 - BUS/TRAIN:
+Board stop 14546; Get down at stop 16085
+Start: 12:23:40, End: 12:41:40
+Transit time: 18 min 0 s
+
+2 - WALK:
+Walk from stop 16085 to stop 7772
+Start: 12:41:40, End: 12:59:09
+Walking time: 17 min 29 s
+
+3 - WALK:
+Walk from stop 7772 to stop 7769
+Start: 12:59:09, End: 13:06:20
+Walking time: 7 min 11 s
+
+4 - WALK:
+Walk from stop 7769 to stop 5092
+Start: 13:06:20, End: 13:22:40
+Walking time: 16 min 20 s
+
+============================================
+
+Source stop: 4856
+Dest stop: 17448
+Departure time: 10:40:48
+Arrival time: 12:15:19
+Transfers: 3
+
+1 - BUS/TRAIN:
+Board stop 4856; Get down at stop 1423
+Start: 10:47:34, End: 11:22:31
+Transit time: 34 min 57 s
+
+2 - BUS/TRAIN:
+Board stop 1423; Get down at stop 4486
+Start: 11:28:00, End: 11:57:28
+Transit time: 29 min 28 s
+
+3 - BUS/TRAIN:
+Board stop 4486; Get down at stop 17696
+Start: 12:01:43, End: 12:14:49
+Transit time: 13 min 6 s
+
+4 - WALK:
+Walk from stop 17696 to stop 17448
+Start: 12:14:49, End: 12:15:19
+Walking time: 0 min 30 s
+
+============================================
+
+Source stop: 4406
+Dest stop: 11067
+Departure time: 13:07:38
+Arrival time: 14:49:32
+Transfers: 3
+
+1 - BUS/TRAIN:
+Board stop 4406; Get down at stop 4431
+Start: 13:14:46, End: 13:35:32
+Transit time: 20 min 46 s
+
+2 - WALK:
+Walk from stop 4431 to stop 14836
+Start: 13:35:32, End: 13:51:41
+Walking time: 16 min 9 s
+
+3 - BUS/TRAIN:
+Board stop 14836; Get down at stop 3197
+Start: 13:52:41, End: 14:39:27
+Transit time: 46 min 46 s
+
+4 - WALK:
+Walk from stop 3197 to stop 11067
+Start: 14:39:27, End: 14:49:32
+Walking time: 10 min 5 s
+
+============================================
+
+Source stop: 8017
+Dest stop: 5502
+Departure time: 16:32:45
+Arrival time: 17:46:38
+Transfers: 4
+
+1 - WALK:
+Walk from stop 8017 to stop 15469
+Start: 16:32:45, End: 16:49:08
+Walking time: 16 min 23 s
+
+2 - BUS/TRAIN:
+Board stop 15469; Get down at stop 15399
+Start: 16:54:51, End: 17:32:29
+Transit time: 37 min 38 s
+
+3 - WALK:
+Walk from stop 15399 to stop 769
+Start: 17:32:29, End: 17:38:47
+Walking time: 6 min 18 s
+
+4 - BUS/TRAIN:
+Board stop 769; Get down at stop 15672
+Start: 17:40:53, End: 17:43:25
+Transit time: 2 min 32 s
+
+5 - WALK:
+Walk from stop 15672 to stop 5502
+Start: 17:43:25, End: 17:46:38
+Walking time: 3 min 13 s
+
+============================================
+
+Source stop: 10948
+Dest stop: 15089
+Departure time: 11:16:00
+Arrival time: 12:35:44
+Transfers: 3
+
+1 - WALK:
+Walk from stop 10948 to stop 10858
+Start: 11:16:00, End: 11:33:21
+Walking time: 17 min 21 s
+
+2 - BUS/TRAIN:
+Board stop 10858; Get down at stop 10906
+Start: 11:40:08, End: 12:20:42
+Transit time: 40 min 34 s
+
+3 - BUS/TRAIN:
+Board stop 10906; Get down at stop 14854
+Start: 12:21:45, End: 12:35:26
+Transit time: 13 min 41 s
+
+4 - WALK:
+Walk from stop 14854 to stop 15089
+Start: 12:35:26, End: 12:35:44
+Walking time: 0 min 18 s
+
+============================================
+
+Source stop: 6408
+Dest stop: 8539
+Departure time: 14:46:14
+No path found.
+============================================
+
+Source stop: 12354
+Dest stop: 18033
+Departure time: 10:19:41
+Arrival time: 12:43:01
+Transfers: 4
+
+1 - WALK:
+Walk from stop 12354 to stop 12142
+Start: 10:19:41, End: 10:37:15
+Walking time: 17 min 34 s
+
+2 - BUS/TRAIN:
+Board stop 12142; Get down at stop 2982
+Start: 10:38:07, End: 10:54:21
+Transit time: 16 min 14 s
+
+3 - WALK:
+Walk from stop 2982 to stop 14001
+Start: 10:54:21, End: 10:57:34
+Walking time: 3 min 13 s
+
+4 - BUS/TRAIN:
+Board stop 14001; Get down at stop 1887
+Start: 10:59:00, End: 12:05:44
+Transit time: 66 min 44 s
+
+5 - BUS/TRAIN:
+Board stop 1887; Get down at stop 18033
+Start: 12:07:32, End: 12:43:01
+Transit time: 35 min 29 s
+
+============================================
+
+Source stop: 10858
+Dest stop: 3580
+Departure time: 15:50:19
+No path found.
+============================================
+
+Source stop: 12287
+Dest stop: 3556
+Departure time: 13:00:19
+No path found.
+============================================
+
+Source stop: 8207
+Dest stop: 2317
+Departure time: 13:54:23
+Arrival time: 15:06:33
+Transfers: 3
+
+1 - BUS/TRAIN:
+Board stop 8207; Get down at stop 8228
+Start: 13:55:50, End: 14:11:51
+Transit time: 16 min 1 s
+
+2 - WALK:
+Walk from stop 8228 to stop 30265
+Start: 14:11:51, End: 14:24:33
+Walking time: 12 min 42 s
+
+3 - BUS/TRAIN:
+Board stop 30265; Get down at stop 30210
+Start: 14:28:00, End: 14:59:30
+Transit time: 31 min 30 s
+
+4 - WALK:
+Walk from stop 30210 to stop 2317
+Start: 14:59:30, End: 15:06:33
+Walking time: 7 min 3 s
+
+============================================
+
+Source stop: 10984
+Dest stop: 2152
+Departure time: 11:11:02
+Arrival time: 12:49:37
+Transfers: 3
+
+1 - BUS/TRAIN:
+Board stop 10984; Get down at stop 11026
+Start: 11:13:12, End: 11:50:47
+Transit time: 37 min 35 s
+
+2 - WALK:
+Walk from stop 11026 to stop 30256
+Start: 11:50:47, End: 12:01:29
+Walking time: 10 min 42 s
+
+3 - BUS/TRAIN:
+Board stop 30256; Get down at stop 30238
+Start: 12:04:30, End: 12:33:00
+Transit time: 28 min 30 s
+
+4 - WALK:
+Walk from stop 30238 to stop 2152
+Start: 12:33:00, End: 12:49:37
+Walking time: 16 min 37 s
+
+============================================
+
+Source stop: 12896
+Dest stop: 15964
+Departure time: 16:17:12
+Arrival time: 17:01:29
+Transfers: 3
+
+1 - BUS/TRAIN:
+Board stop 12896; Get down at stop 4707
+Start: 16:20:05, End: 16:38:31
+Transit time: 18 min 26 s
+
+2 - BUS/TRAIN:
+Board stop 4707; Get down at stop 8317
+Start: 16:39:54, End: 16:50:52
+Transit time: 10 min 58 s
+
+3 - BUS/TRAIN:
+Board stop 8317; Get down at stop 8323
+Start: 16:52:52, End: 16:56:16
+Transit time: 3 min 24 s
+
+4 - WALK:
+Walk from stop 8323 to stop 15964
+Start: 16:56:16, End: 17:01:29
+Walking time: 5 min 13 s
+
+============================================
+
+Source stop: 1004
+Dest stop: 15368
+Departure time: 17:45:17
+Arrival time: 19:07:27
+Transfers: 4
+
+1 - WALK:
+Walk from stop 1004 to stop 669
+Start: 17:45:17, End: 18:03:03
+Walking time: 17 min 46 s
+
+2 - BUS/TRAIN:
+Board stop 669; Get down at stop 6597
+Start: 18:03:48, End: 18:52:09
+Transit time: 48 min 21 s
+
+3 - WALK:
+Walk from stop 6597 to stop 30234
+Start: 18:52:09, End: 18:52:30
+Walking time: 0 min 21 s
+
+4 - BUS/TRAIN:
+Board stop 30234; Get down at stop 30126
+Start: 18:55:30, End: 18:58:00
+Transit time: 2 min 30 s
+
+5 - WALK:
+Walk from stop 30126 to stop 15368
+Start: 18:58:00, End: 19:07:27
+Walking time: 9 min 27 s
+
+============================================
+
+Source stop: 2247
+Dest stop: 4811
+Departure time: 14:08:57
+Arrival time: 16:21:38
+Transfers: 3
+
+1 - WALK:
+Walk from stop 2247 to stop 2278
+Start: 14:08:57, End: 14:26:08
+Walking time: 17 min 11 s
+
+2 - BUS/TRAIN:
+Board stop 2278; Get down at stop 2354
+Start: 14:26:21, End: 15:11:55
+Transit time: 45 min 34 s
+
+3 - BUS/TRAIN:
+Board stop 2354; Get down at stop 4901
+Start: 15:14:31, End: 16:05:16
+Transit time: 50 min 45 s
+
+4 - BUS/TRAIN:
+Board stop 4901; Get down at stop 4811
+Start: 16:06:28, End: 16:21:38
+Transit time: 15 min 10 s
+
+============================================
+
+Source stop: 343
+Dest stop: 12417
+Departure time: 14:29:26
+Arrival time: 16:43:03
+Transfers: 3
+
+1 - WALK:
+Walk from stop 343 to stop 39
+Start: 14:29:26, End: 14:46:34
+Walking time: 17 min 8 s
+
+2 - BUS/TRAIN:
+Board stop 39; Get down at stop 73
+Start: 14:49:42, End: 15:15:01
+Transit time: 25 min 19 s
+
+3 - BUS/TRAIN:
+Board stop 73; Get down at stop 7529
+Start: 15:18:03, End: 16:22:46
+Transit time: 64 min 43 s
+
+4 - BUS/TRAIN:
+Board stop 7529; Get down at stop 12417
+Start: 16:26:16, End: 16:43:03
+Transit time: 16 min 47 s
+
+============================================
+
+Source stop: 1580
+Dest stop: 11166
+Departure time: 14:22:09
+Arrival time: 15:25:53
+Transfers: 3
+
+1 - WALK:
+Walk from stop 1580 to stop 30154
+Start: 14:22:09, End: 14:39:55
+Walking time: 17 min 46 s
+
+2 - BUS/TRAIN:
+Board stop 30154; Get down at stop 30049
+Start: 14:43:30, End: 15:02:00
+Transit time: 18 min 30 s
+
+3 - WALK:
+Walk from stop 30049 to stop 482
+Start: 15:02:00, End: 15:11:09
+Walking time: 9 min 9 s
+
+4 - WALK:
+Walk from stop 482 to stop 11166
+Start: 15:11:09, End: 15:25:53
+Walking time: 14 min 44 s
+
+============================================
+
+Source stop: 17400
+Dest stop: 10447
+Departure time: 13:25:03
+Arrival time: 16:49:55
+Transfers: 4
+
+1 - WALK:
+Walk from stop 17400 to stop 5176
+Start: 13:25:03, End: 13:42:31
+Walking time: 17 min 28 s
+
+2 - WALK:
+Walk from stop 5176 to stop 14864
+Start: 13:42:31, End: 13:59:41
+Walking time: 17 min 10 s
+
+3 - BUS/TRAIN:
+Board stop 14864; Get down at stop 15930
+Start: 14:10:49, End: 15:27:30
+Transit time: 76 min 41 s
+
+4 - BUS/TRAIN:
+Board stop 15930; Get down at stop 5711
+Start: 15:29:30, End: 15:59:33
+Transit time: 30 min 3 s
+
+5 - BUS/TRAIN:
+Board stop 5711; Get down at stop 10447
+Start: 16:01:10, End: 16:49:55
+Transit time: 48 min 45 s
+
+============================================
+
+Source stop: 14764
+Dest stop: 1353
+Departure time: 11:09:03
+Arrival time: 12:08:18
+Transfers: 3
+
+1 - BUS/TRAIN:
+Board stop 14764; Get down at stop 440
+Start: 11:12:26, End: 11:31:12
+Transit time: 18 min 46 s
+
+2 - BUS/TRAIN:
+Board stop 440; Get down at stop 2042
+Start: 11:33:02, End: 11:41:06
+Transit time: 8 min 4 s
+
+3 - WALK:
+Walk from stop 2042 to stop 18622
+Start: 11:41:06, End: 11:50:53
+Walking time: 9 min 47 s
+
+4 - WALK:
+Walk from stop 18622 to stop 1353
+Start: 11:50:53, End: 12:08:18
+Walking time: 17 min 25 s
+
+============================================
+
+Source stop: 4630
+Dest stop: 18592
+Departure time: 17:00:54
+Arrival time: 17:57:06
+Transfers: 3
+
+1 - WALK:
+Walk from stop 4630 to stop 30221
+Start: 17:00:54, End: 17:08:35
+Walking time: 7 min 41 s
+
+2 - BUS/TRAIN:
+Board stop 30221; Get down at stop 30057
+Start: 17:10:30, End: 17:47:00
+Transit time: 36 min 30 s
+
+3 - WALK:
+Walk from stop 30057 to stop 6179
+Start: 17:47:00, End: 17:47:16
+Walking time: 0 min 16 s
+
+4 - WALK:
+Walk from stop 6179 to stop 18592
+Start: 17:47:16, End: 17:57:06
+Walking time: 9 min 50 s
+
+============================================
+
+Source stop: 1349
+Dest stop: 702
+Departure time: 16:37:40
+Arrival time: 17:41:40
+Transfers: 4
+
+1 - BUS/TRAIN:
+Board stop 1349; Get down at stop 769
+Start: 16:37:42, End: 16:49:26
+Transit time: 11 min 44 s
+
+2 - BUS/TRAIN:
+Board stop 769; Get down at stop 800
+Start: 16:53:01, End: 17:18:00
+Transit time: 24 min 59 s
+
+3 - WALK:
+Walk from stop 800 to stop 11161
+Start: 17:18:00, End: 17:27:43
+Walking time: 9 min 43 s
+
+4 - WALK:
+Walk from stop 11161 to stop 703
+Start: 17:27:43, End: 17:38:53
+Walking time: 11 min 10 s
+
+5 - WALK:
+Walk from stop 703 to stop 702
+Start: 17:38:53, End: 17:41:40
+Walking time: 2 min 47 s
+
+============================================
+
+Source stop: 6841
+Dest stop: 11133
+Departure time: 15:26:22
+Arrival time: 17:21:24
+Transfers: 4
+
+1 - WALK:
+Walk from stop 6841 to stop 30082
+Start: 15:26:22, End: 15:40:25
+Walking time: 14 min 3 s
+
+2 - BUS/TRAIN:
+Board stop 30082; Get down at stop 30221
+Start: 15:43:00, End: 16:04:30
+Transit time: 21 min 30 s
+
+3 - WALK:
+Walk from stop 30221 to stop 30138
+Start: 16:04:30, End: 16:20:19
+Walking time: 15 min 49 s
+
+4 - BUS/TRAIN:
+Board stop 30138; Get down at stop 30225
+Start: 16:22:00, End: 17:09:30
+Transit time: 47 min 30 s
+
+5 - WALK:
+Walk from stop 30225 to stop 11133
+Start: 17:09:30, End: 17:21:24
+Walking time: 11 min 54 s
+
+============================================
+
+Source stop: 18331
+Dest stop: 11498
+Departure time: 10:35:51
+Arrival time: 11:44:30
+Transfers: 4
+
+1 - WALK:
+Walk from stop 18331 to stop 8419
+Start: 10:35:51, End: 10:50:34
+Walking time: 14 min 43 s
+
+2 - WALK:
+Walk from stop 8419 to stop 17609
+Start: 10:50:34, End: 11:05:05
+Walking time: 14 min 31 s
+
+3 - WALK:
+Walk from stop 17609 to stop 14592
+Start: 11:05:05, End: 11:15:08
+Walking time: 10 min 3 s
+
+4 - BUS/TRAIN:
+Board stop 14592; Get down at stop 1504
+Start: 11:21:25, End: 11:36:30
+Transit time: 15 min 5 s
+
+5 - WALK:
+Walk from stop 1504 to stop 11498
+Start: 11:36:30, End: 11:44:30
+Walking time: 8 min 0 s
+
+============================================
+
+Source stop: 11594
+Dest stop: 3834
+Departure time: 12:51:17
+Arrival time: 13:04:44
+Transfers: 0
+
+1 - WALK:
+Walk from stop 11594 to stop 3834
+Start: 12:51:17, End: 13:04:44
+Walking time: 13 min 27 s
+
+============================================
+
+Source stop: 14373
+Dest stop: 5211
+Departure time: 11:11:42
+Arrival time: 14:02:05
+Transfers: 4
+
+1 - WALK:
+Walk from stop 14373 to stop 3616
+Start: 11:11:42, End: 11:29:23
+Walking time: 17 min 41 s
+
+2 - BUS/TRAIN:
+Board stop 3616; Get down at stop 14056
+Start: 11:31:22, End: 11:40:52
+Transit time: 9 min 30 s
+
+3 - BUS/TRAIN:
+Board stop 14056; Get down at stop 1865
+Start: 11:41:45, End: 12:46:06
+Transit time: 64 min 21 s
+
+4 - BUS/TRAIN:
+Board stop 1865; Get down at stop 6516
+Start: 12:54:01, End: 13:26:38
+Transit time: 32 min 37 s
+
+5 - BUS/TRAIN:
+Board stop 6516; Get down at stop 5211
+Start: 13:28:56, End: 14:02:05
+Transit time: 33 min 9 s
+
+============================================
+
+Source stop: 1990
+Dest stop: 14271
+Departure time: 13:38:09
+Arrival time: 15:47:44
+Transfers: 4
+
+1 - BUS/TRAIN:
+Board stop 1990; Get down at stop 18412
+Start: 13:41:56, End: 14:19:00
+Transit time: 37 min 4 s
+
+2 - BUS/TRAIN:
+Board stop 18412; Get down at stop 15452
+Start: 14:19:34, End: 15:27:16
+Transit time: 67 min 42 s
+
+3 - WALK:
+Walk from stop 15452 to stop 30175
+Start: 15:27:16, End: 15:30:34
+Walking time: 3 min 18 s
+
+4 - BUS/TRAIN:
+Board stop 30175; Get down at stop 30133
+Start: 15:35:00, End: 15:40:00
+Transit time: 5 min 0 s
+
+5 - WALK:
+Walk from stop 30133 to stop 14271
+Start: 15:40:00, End: 15:47:44
+Walking time: 7 min 44 s
+
+============================================
+
+Source stop: 18099
+Dest stop: 11362
+Departure time: 14:58:48
+Arrival time: 16:21:20
+Transfers: 3
+
+1 - WALK:
+Walk from stop 18099 to stop 30135
+Start: 14:58:48, End: 15:15:24
+Walking time: 16 min 36 s
+
+2 - BUS/TRAIN:
+Board stop 30135; Get down at stop 30074
+Start: 15:18:30, End: 15:38:30
+Transit time: 20 min 0 s
+
+3 - BUS/TRAIN:
+Board stop 30074; Get down at stop 30386
+Start: 15:38:30, End: 16:12:30
+Transit time: 34 min 0 s
+
+4 - WALK:
+Walk from stop 30386 to stop 11362
+Start: 16:12:30, End: 16:21:20
+Walking time: 8 min 50 s
+
+============================================
+
+Source stop: 11939
+Dest stop: 4539
+Departure time: 13:54:40
+No path found.
+============================================
+
+Source stop: 16035
+Dest stop: 3539
+Departure time: 11:56:37
+No path found.
+============================================
+
+Source stop: 18638
+Dest stop: 1721
+Departure time: 17:18:49
+Arrival time: 18:46:58
+Transfers: 4
+
+1 - WALK:
+Walk from stop 18638 to stop 1327
+Start: 17:18:49, End: 17:35:54
+Walking time: 17 min 5 s
+
+2 - WALK:
+Walk from stop 1327 to stop 8400
+Start: 17:35:54, End: 17:53:37
+Walking time: 17 min 43 s
+
+3 - BUS/TRAIN:
+Board stop 8400; Get down at stop 14592
+Start: 17:57:00, End: 18:18:39
+Transit time: 21 min 39 s
+
+4 - BUS/TRAIN:
+Board stop 14592; Get down at stop 12031
+Start: 18:31:12, End: 18:46:35
+Transit time: 15 min 23 s
+
+5 - WALK:
+Walk from stop 12031 to stop 1721
+Start: 18:46:35, End: 18:46:58
+Walking time: 0 min 23 s
+
+============================================
+
+Source stop: 6545
+Dest stop: 4104
+Departure time: 10:01:59
+Arrival time: 11:55:15
+Transfers: 4
+
+1 - WALK:
+Walk from stop 6545 to stop 10896
+Start: 10:01:59, End: 10:18:48
+Walking time: 16 min 49 s
+
+2 - WALK:
+Walk from stop 10896 to stop 6166
+Start: 10:18:48, End: 10:36:20
+Walking time: 17 min 32 s
+
+3 - BUS/TRAIN:
+Board stop 6166; Get down at stop 6259
+Start: 10:38:24, End: 11:38:12
+Transit time: 59 min 48 s
+
+4 - WALK:
+Walk from stop 6259 to stop 4062
+Start: 11:38:12, End: 11:53:01
+Walking time: 14 min 49 s
+
+5 - WALK:
+Walk from stop 4062 to stop 4104
+Start: 11:53:01, End: 11:55:15
+Walking time: 2 min 14 s
+
+============================================
+
+Source stop: 30272
+Dest stop: 4579
+Departure time: 16:26:25
+Arrival time: 18:02:02
+Transfers: 3
+
+1 - BUS/TRAIN:
+Board stop 30272; Get down at stop 30374
+Start: 16:29:00, End: 16:33:30
+Transit time: 4 min 30 s
+
+2 - WALK:
+Walk from stop 30374 to stop 18769
+Start: 16:33:30, End: 16:37:25
+Walking time: 3 min 55 s
+
+3 - BUS/TRAIN:
+Board stop 18769; Get down at stop 17575
+Start: 16:41:30, End: 17:59:36
+Transit time: 78 min 6 s
+
+4 - WALK:
+Walk from stop 17575 to stop 4579
+Start: 17:59:36, End: 18:02:02
+Walking time: 2 min 26 s
+
+============================================
+
+Source stop: 12832
+Dest stop: 7604
+Departure time: 17:57:20
+No path found.
+============================================
+
+Source stop: 10165
+Dest stop: 17552
+Departure time: 14:05:11
+Arrival time: 15:03:39
+Transfers: 3
+
+1 - WALK:
+Walk from stop 10165 to stop 15681
+Start: 14:05:11, End: 14:21:49
+Walking time: 16 min 38 s
+
+2 - WALK:
+Walk from stop 15681 to stop 15867
+Start: 14:21:49, End: 14:38:47
+Walking time: 16 min 58 s
+
+3 - BUS/TRAIN:
+Board stop 15867; Get down at stop 14851
+Start: 14:39:15, End: 15:00:55
+Transit time: 21 min 40 s
+
+4 - WALK:
+Walk from stop 14851 to stop 17552
+Start: 15:00:55, End: 15:03:39
+Walking time: 2 min 44 s
+
+============================================
+
+Source stop: 3832
+Dest stop: 4099
+Departure time: 12:31:14
+Arrival time: 13:38:54
+Transfers: 2
+
+1 - WALK:
+Walk from stop 3832 to stop 860
+Start: 12:31:14, End: 12:48:34
+Walking time: 17 min 20 s
+
+2 - BUS/TRAIN:
+Board stop 860; Get down at stop 898
+Start: 12:53:34, End: 13:27:49
+Transit time: 34 min 15 s
+
+3 - WALK:
+Walk from stop 898 to stop 4099
+Start: 13:27:49, End: 13:38:54
+Walking time: 11 min 5 s
+
+============================================
+
+Source stop: 4708
+Dest stop: 17732
+Departure time: 13:36:03
+Arrival time: 16:23:02
+Transfers: 4
+
+1 - BUS/TRAIN:
+Board stop 4708; Get down at stop 17508
+Start: 13:36:26, End: 13:51:46
+Transit time: 15 min 20 s
+
+2 - BUS/TRAIN:
+Board stop 17508; Get down at stop 1881
+Start: 13:52:52, End: 14:36:22
+Transit time: 43 min 30 s
+
+3 - WALK:
+Walk from stop 1881 to stop 2530
+Start: 14:36:22, End: 14:46:23
+Walking time: 10 min 1 s
+
+4 - BUS/TRAIN:
+Board stop 2530; Get down at stop 7531
+Start: 14:48:00, End: 16:13:02
+Transit time: 85 min 2 s
+
+5 - WALK:
+Walk from stop 7531 to stop 17732
+Start: 16:13:02, End: 16:23:02
+Walking time: 10 min 0 s
+
+============================================
+
+Source stop: 177
+Dest stop: 8734
+Departure time: 10:38:57
+Arrival time: 12:12:34
+Transfers: 4
+
+1 - WALK:
+Walk from stop 177 to stop 9033
+Start: 10:38:57, End: 10:55:40
+Walking time: 16 min 43 s
+
+2 - BUS/TRAIN:
+Board stop 9033; Get down at stop 12852
+Start: 10:55:46, End: 11:30:52
+Transit time: 35 min 6 s
+
+3 - WALK:
+Walk from stop 12852 to stop 30181
+Start: 11:30:52, End: 11:46:44
+Walking time: 15 min 52 s
+
+4 - BUS/TRAIN:
+Board stop 30181; Get down at stop 30060
+Start: 11:48:00, End: 11:55:00
+Transit time: 7 min 0 s
+
+5 - WALK:
+Walk from stop 30060 to stop 8734
+Start: 11:55:00, End: 12:12:34
+Walking time: 17 min 34 s
+
+============================================
+
+Source stop: 7734
+Dest stop: 14903
+Departure time: 13:15:19
+Arrival time: 14:48:33
+Transfers: 4
+
+1 - WALK:
+Walk from stop 7734 to stop 15469
+Start: 13:15:19, End: 13:32:04
+Walking time: 16 min 45 s
+
+2 - BUS/TRAIN:
+Board stop 15469; Get down at stop 2354
+Start: 13:37:06, End: 14:00:03
+Transit time: 22 min 57 s
+
+3 - BUS/TRAIN:
+Board stop 2354; Get down at stop 1163
+Start: 14:00:31, End: 14:35:17
+Transit time: 34 min 46 s
+
+4 - BUS/TRAIN:
+Board stop 1163; Get down at stop 12556
+Start: 14:37:00, End: 14:48:15
+Transit time: 11 min 15 s
+
+5 - WALK:
+Walk from stop 12556 to stop 14903
+Start: 14:48:15, End: 14:48:33
+Walking time: 0 min 18 s
+
+============================================
+
+Source stop: 505
+Dest stop: 14592
+Departure time: 12:20:28
+Arrival time: 13:58:31
+Transfers: 3
+
+1 - WALK:
+Walk from stop 505 to stop 1
+Start: 12:20:28, End: 12:31:10
+Walking time: 10 min 42 s
+
+2 - BUS/TRAIN:
+Board stop 1; Get down at stop 51
+Start: 12:33:00, End: 13:02:55
+Transit time: 29 min 55 s
+
+3 - BUS/TRAIN:
+Board stop 51; Get down at stop 18712
+Start: 13:03:39, End: 13:44:00
+Transit time: 40 min 21 s
+
+4 - WALK:
+Walk from stop 18712 to stop 14592
+Start: 13:44:00, End: 13:58:31
+Walking time: 14 min 31 s
+
+============================================
+
+Source stop: 10845
+Dest stop: 8622
+Departure time: 14:50:41
+Arrival time: 16:59:57
+Transfers: 4
+
+1 - WALK:
+Walk from stop 10845 to stop 6443
+Start: 14:50:41, End: 15:07:48
+Walking time: 17 min 7 s
+
+2 - BUS/TRAIN:
+Board stop 6443; Get down at stop 1876
+Start: 15:10:44, End: 15:48:51
+Transit time: 38 min 7 s
+
+3 - BUS/TRAIN:
+Board stop 1876; Get down at stop 1936
+Start: 15:54:09, End: 16:40:30
+Transit time: 46 min 21 s
+
+4 - WALK:
+Walk from stop 1936 to stop 14613
+Start: 16:40:30, End: 16:49:09
+Walking time: 8 min 39 s
+
+5 - WALK:
+Walk from stop 14613 to stop 8622
+Start: 16:49:09, End: 16:59:57
+Walking time: 10 min 48 s
+
+============================================
+
+Source stop: 5043
+Dest stop: 2721
+Departure time: 10:50:48
+Arrival time: 12:00:44
+Transfers: 3
+
+1 - BUS/TRAIN:
+Board stop 5043; Get down at stop 5054
+Start: 11:01:19, End: 11:08:00
+Transit time: 6 min 41 s
+
+2 - WALK:
+Walk from stop 5054 to stop 10095
+Start: 11:08:00, End: 11:25:26
+Walking time: 17 min 26 s
+
+3 - BUS/TRAIN:
+Board stop 10095; Get down at stop 18295
+Start: 11:26:28, End: 11:50:30
+Transit time: 24 min 2 s
+
+4 - WALK:
+Walk from stop 18295 to stop 2721
+Start: 11:50:30, End: 12:00:44
+Walking time: 10 min 14 s
+
+============================================
+
+Source stop: 7020
+Dest stop: 2258
+Departure time: 15:37:14
+Arrival time: 16:27:29
+Transfers: 3
+
+1 - BUS/TRAIN:
+Board stop 7020; Get down at stop 14893
+Start: 15:40:18, End: 15:46:12
+Transit time: 5 min 54 s
+
+2 - BUS/TRAIN:
+Board stop 14893; Get down at stop 10873
+Start: 15:51:35, End: 16:05:08
+Transit time: 13 min 33 s
+
+3 - BUS/TRAIN:
+Board stop 10873; Get down at stop 2590
+Start: 16:05:16, End: 16:16:39
+Transit time: 11 min 23 s
+
+4 - WALK:
+Walk from stop 2590 to stop 2258
+Start: 16:16:39, End: 16:27:29
+Walking time: 10 min 50 s
+
+============================================
+
+Source stop: 9988
+Dest stop: 17464
+Departure time: 16:19:11
+Arrival time: 18:43:53
+Transfers: 4
+
+1 - BUS/TRAIN:
+Board stop 9988; Get down at stop 14816
+Start: 16:24:57, End: 16:40:04
+Transit time: 15 min 7 s
+
+2 - WALK:
+Walk from stop 14816 to stop 4143
+Start: 16:40:04, End: 16:57:44
+Walking time: 17 min 40 s
+
+3 - BUS/TRAIN:
+Board stop 4143; Get down at stop 3194
+Start: 16:58:21, End: 18:13:50
+Transit time: 75 min 29 s
+
+4 - WALK:
+Walk from stop 3194 to stop 11145
+Start: 18:13:50, End: 18:29:22
+Walking time: 15 min 32 s
+
+5 - WALK:
+Walk from stop 11145 to stop 17464
+Start: 18:29:22, End: 18:43:53
+Walking time: 14 min 31 s
+
+============================================
+
+Source stop: 7580
+Dest stop: 9528
+Departure time: 15:00:18
+No path found.
+============================================
+
+Source stop: 7141
+Dest stop: 14779
+Departure time: 17:57:50
+Arrival time: 19:22:01
+Transfers: 3
+
+1 - BUS/TRAIN:
+Board stop 7141; Get down at stop 8080
+Start: 17:58:10, End: 18:19:27
+Transit time: 21 min 17 s
+
+2 - WALK:
+Walk from stop 8080 to stop 6191
+Start: 18:19:27, End: 18:34:49
+Walking time: 15 min 22 s
+
+3 - BUS/TRAIN:
+Board stop 6191; Get down at stop 14536
+Start: 18:39:37, End: 19:21:31
+Transit time: 41 min 54 s
+
+4 - WALK:
+Walk from stop 14536 to stop 14779
+Start: 19:21:31, End: 19:22:01
+Walking time: 0 min 30 s
+
+============================================
+
+Source stop: 9377
+Dest stop: 40810
+Departure time: 12:56:10
+Arrival time: 14:22:16
+Transfers: 4
+
+1 - WALK:
+Walk from stop 9377 to stop 10027
+Start: 12:56:10, End: 13:04:00
+Walking time: 7 min 50 s
+
+2 - WALK:
+Walk from stop 10027 to stop 2744
+Start: 13:04:00, End: 13:21:43
+Walking time: 17 min 43 s
+
+3 - WALK:
+Walk from stop 2744 to stop 8307
+Start: 13:21:43, End: 13:28:13
+Walking time: 6 min 30 s
+
+4 - BUS/TRAIN:
+Board stop 8307; Get down at stop 8371
+Start: 13:29:00, End: 14:08:55
+Transit time: 39 min 55 s
+
+5 - WALK:
+Walk from stop 8371 to stop 40810
+Start: 14:08:55, End: 14:22:16
+Walking time: 13 min 21 s
+
+============================================
+
+Source stop: 8923
+Dest stop: 3447
+Departure time: 16:42:33
+Arrival time: 18:14:36
+Transfers: 4
+
+1 - WALK:
+Walk from stop 8923 to stop 15233
+Start: 16:42:33, End: 16:59:11
+Walking time: 16 min 38 s
+
+2 - BUS/TRAIN:
+Board stop 15233; Get down at stop 442
+Start: 17:00:18, End: 17:20:16
+Transit time: 19 min 58 s
+
+3 - BUS/TRAIN:
+Board stop 442; Get down at stop 5209
+Start: 17:20:25, End: 17:51:37
+Transit time: 31 min 12 s
+
+4 - WALK:
+Walk from stop 5209 to stop 3206
+Start: 17:51:37, End: 18:05:46
+Walking time: 14 min 9 s
+
+5 - WALK:
+Walk from stop 3206 to stop 3447
+Start: 18:05:46, End: 18:14:36
+Walking time: 8 min 50 s
+
+============================================
+
+Source stop: 9018
+Dest stop: 7800
+Departure time: 12:32:11
+Arrival time: 13:32:09
+Transfers: 2
+
+1 - BUS/TRAIN:
+Board stop 9018; Get down at stop 17293
+Start: 12:32:12, End: 13:06:24
+Transit time: 34 min 12 s
+
+2 - WALK:
+Walk from stop 17293 to stop 7780
+Start: 13:06:24, End: 13:22:10
+Walking time: 15 min 46 s
+
+3 - WALK:
+Walk from stop 7780 to stop 7800
+Start: 13:22:10, End: 13:32:09
+Walking time: 9 min 59 s
+
+============================================
+
+Source stop: 6727
+Dest stop: 18246
+Departure time: 11:46:56
+Arrival time: 12:39:43
+Transfers: 2
+
+1 - WALK:
+Walk from stop 6727 to stop 30126
+Start: 11:46:56, End: 11:59:45
+Walking time: 12 min 49 s
+
+2 - BUS/TRAIN:
+Board stop 30126; Get down at stop 30037
+Start: 12:04:30, End: 12:24:00
+Transit time: 19 min 30 s
+
+3 - WALK:
+Walk from stop 30037 to stop 18246
+Start: 12:24:00, End: 12:39:43
+Walking time: 15 min 43 s
+
+============================================
+
+Source stop: 6596
+Dest stop: 4486
+Departure time: 10:29:31
+Arrival time: 10:43:07
+Transfers: 0
+
+1 - WALK:
+Walk from stop 6596 to stop 4486
+Start: 10:29:31, End: 10:43:07
+Walking time: 13 min 36 s
+
+============================================
+
+Source stop: 11088
+Dest stop: 8946
+Departure time: 12:55:24
+Arrival time: 13:53:59
+Transfers: 2
+
+1 - WALK:
+Walk from stop 11088 to stop 9252
+Start: 12:55:24, End: 13:12:57
+Walking time: 17 min 33 s
+
+2 - BUS/TRAIN:
+Board stop 9252; Get down at stop 17314
+Start: 13:16:42, End: 13:43:27
+Transit time: 26 min 45 s
+
+3 - WALK:
+Walk from stop 17314 to stop 8946
+Start: 13:43:27, End: 13:53:59
+Walking time: 10 min 32 s
+
+============================================
+
+Source stop: 7119
+Dest stop: 2234
+Departure time: 15:05:17
+Arrival time: 15:42:16
+Transfers: 3
+
+1 - BUS/TRAIN:
+Board stop 7119; Get down at stop 7124
+Start: 15:06:04, End: 15:09:24
+Transit time: 3 min 20 s
+
+2 - WALK:
+Walk from stop 7124 to stop 10798
+Start: 15:09:24, End: 15:15:21
+Walking time: 5 min 57 s
+
+3 - WALK:
+Walk from stop 10798 to stop 17967
+Start: 15:15:21, End: 15:32:28
+Walking time: 17 min 7 s
+
+4 - WALK:
+Walk from stop 17967 to stop 2234
+Start: 15:32:28, End: 15:42:16
+Walking time: 9 min 48 s
+
+============================================
+
+Source stop: 13022
+Dest stop: 15437
+Departure time: 17:27:18
+Arrival time: 19:49:34
+Transfers: 4
+
+1 - WALK:
+Walk from stop 13022 to stop 5313
+Start: 17:27:18, End: 17:45:04
+Walking time: 17 min 46 s
+
+2 - BUS/TRAIN:
+Board stop 5313; Get down at stop 17925
+Start: 17:48:56, End: 18:21:44
+Transit time: 32 min 48 s
+
+3 - BUS/TRAIN:
+Board stop 17925; Get down at stop 543
+Start: 18:22:52, End: 19:17:12
+Transit time: 54 min 20 s
+
+4 - BUS/TRAIN:
+Board stop 543; Get down at stop 6714
+Start: 19:18:42, End: 19:40:05
+Transit time: 21 min 23 s
+
+5 - WALK:
+Walk from stop 6714 to stop 15437
+Start: 19:40:05, End: 19:49:34
+Walking time: 9 min 29 s
+
+============================================
+
+Source stop: 18777
+Dest stop: 7411
+Departure time: 11:49:45
+Arrival time: 12:16:22
+Transfers: 2
+
+1 - WALK:
+Walk from stop 18777 to stop 30224
+Start: 11:49:45, End: 12:02:34
+Walking time: 12 min 49 s
+
+2 - BUS/TRAIN:
+Board stop 30224; Get down at stop 30192
+Start: 12:05:00, End: 12:09:00
+Transit time: 4 min 0 s
+
+3 - WALK:
+Walk from stop 30192 to stop 7411
+Start: 12:09:00, End: 12:16:22
+Walking time: 7 min 22 s
+
+============================================
+
+Source stop: 5253
+Dest stop: 5264
+Departure time: 17:04:47
+Arrival time: 17:08:25
+Transfers: 0
+
+1 - WALK:
+Walk from stop 5253 to stop 5264
+Start: 17:04:47, End: 17:08:25
+Walking time: 3 min 38 s
+
+============================================
+
+Source stop: 30128
+Dest stop: 6696
+Departure time: 12:16:58
+Arrival time: 12:58:34
+Transfers: 3
+
+1 - BUS/TRAIN:
+Board stop 30128; Get down at stop 30008
+Start: 12:17:00, End: 12:30:30
+Transit time: 13 min 30 s
+
+2 - WALK:
+Walk from stop 30008 to stop 68
+Start: 12:30:30, End: 12:32:21
+Walking time: 1 min 51 s
+
+3 - WALK:
+Walk from stop 68 to stop 4638
+Start: 12:32:21, End: 12:45:17
+Walking time: 12 min 56 s
+
+4 - WALK:
+Walk from stop 4638 to stop 6696
+Start: 12:45:17, End: 12:58:34
+Walking time: 13 min 17 s
+
+============================================
+
+Source stop: 5068
+Dest stop: 18309
+Departure time: 14:49:34
+Arrival time: 17:19:39
+Transfers: 4
+
+1 - WALK:
+Walk from stop 5068 to stop 3248
+Start: 14:49:34, End: 15:04:34
+Walking time: 15 min 0 s
+
+2 - WALK:
+Walk from stop 3248 to stop 8319
+Start: 15:04:34, End: 15:21:59
+Walking time: 17 min 25 s
+
+3 - BUS/TRAIN:
+Board stop 8319; Get down at stop 14182
+Start: 15:24:30, End: 16:54:30
+Transit time: 90 min 0 s
+
+4 - WALK:
+Walk from stop 14182 to stop 1711
+Start: 16:54:30, End: 17:03:08
+Walking time: 8 min 38 s
+
+5 - WALK:
+Walk from stop 1711 to stop 18309
+Start: 17:03:08, End: 17:19:39
+Walking time: 16 min 31 s
+
+============================================
+
+Source stop: 7378
+Dest stop: 17435
+Departure time: 13:40:31
+Arrival time: 14:52:09
+Transfers: 3
+
+1 - BUS/TRAIN:
+Board stop 7378; Get down at stop 7398
+Start: 13:41:37, End: 13:53:50
+Transit time: 12 min 13 s
+
+2 - BUS/TRAIN:
+Board stop 7398; Get down at stop 7629
+Start: 13:54:08, End: 14:31:04
+Transit time: 36 min 56 s
+
+3 - BUS/TRAIN:
+Board stop 7629; Get down at stop 4432
+Start: 14:31:06, End: 14:52:02
+Transit time: 20 min 56 s
+
+4 - WALK:
+Walk from stop 4432 to stop 17435
+Start: 14:52:02, End: 14:52:09
+Walking time: 0 min 7 s
+
+============================================
+
+Source stop: 11096
+Dest stop: 15113
+Departure time: 12:05:43
+No path found.
+============================================
+
+Source stop: 4978
+Dest stop: 10796
+Departure time: 12:48:12
+Arrival time: 13:40:04
+Transfers: 3
+
+1 - WALK:
+Walk from stop 4978 to stop 30280
+Start: 12:48:12, End: 12:59:42
+Walking time: 11 min 30 s
+
+2 - BUS/TRAIN:
+Board stop 30280; Get down at stop 30192
+Start: 13:03:30, End: 13:26:00
+Transit time: 22 min 30 s
+
+3 - WALK:
+Walk from stop 30192 to stop 14140
+Start: 13:26:00, End: 13:26:54
+Walking time: 0 min 54 s
+
+4 - BUS/TRAIN:
+Board stop 14140; Get down at stop 10796
+Start: 13:27:00, End: 13:40:04
+Transit time: 13 min 4 s
+
+============================================
+
+Source stop: 11484
+Dest stop: 7184
+Departure time: 13:37:17
+Arrival time: 15:52:14
+Transfers: 3
+
+1 - WALK:
+Walk from stop 11484 to stop 1739
+Start: 13:37:17, End: 13:54:40
+Walking time: 17 min 23 s
+
+2 - BUS/TRAIN:
+Board stop 1739; Get down at stop 18396
+Start: 13:59:09, End: 15:18:49
+Transit time: 79 min 40 s
+
+3 - BUS/TRAIN:
+Board stop 18396; Get down at stop 5209
+Start: 15:22:45, End: 15:41:37
+Transit time: 18 min 52 s
+
+4 - WALK:
+Walk from stop 5209 to stop 7184
+Start: 15:41:37, End: 15:52:14
+Walking time: 10 min 37 s
+
+============================================
+
+Source stop: 4109
+Dest stop: 10401
+Departure time: 17:52:03
+Arrival time: 19:08:49
+Transfers: 3
+
+1 - WALK:
+Walk from stop 4109 to stop 11150
+Start: 17:52:03, End: 18:09:46
+Walking time: 17 min 43 s
+
+2 - BUS/TRAIN:
+Board stop 11150; Get down at stop 7430
+Start: 18:10:29, End: 18:48:16
+Transit time: 37 min 47 s
+
+3 - BUS/TRAIN:
+Board stop 7430; Get down at stop 17698
+Start: 18:50:53, End: 18:58:03
+Transit time: 7 min 10 s
+
+4 - WALK:
+Walk from stop 17698 to stop 10401
+Start: 18:58:03, End: 19:08:49
+Walking time: 10 min 46 s
+
+============================================
+
+Source stop: 2981
+Dest stop: 140
+Departure time: 15:35:36
+Arrival time: 17:27:30
+Transfers: 4
+
+1 - WALK:
+Walk from stop 2981 to stop 14001
+Start: 15:35:36, End: 15:40:54
+Walking time: 5 min 18 s
+
+2 - BUS/TRAIN:
+Board stop 14001; Get down at stop 1117
+Start: 15:42:30, End: 16:43:39
+Transit time: 61 min 9 s
+
+3 - WALK:
+Walk from stop 1117 to stop 30374
+Start: 16:43:39, End: 16:49:36
+Walking time: 5 min 57 s
+
+4 - BUS/TRAIN:
+Board stop 30374; Get down at stop 30188
+Start: 16:53:00, End: 17:20:30
+Transit time: 27 min 30 s
+
+5 - WALK:
+Walk from stop 30188 to stop 140
+Start: 17:20:30, End: 17:27:30
+Walking time: 7 min 0 s
+
+============================================
+
+Source stop: 1732
+Dest stop: 41030
+Departure time: 13:18:17
+Arrival time: 15:10:30
+Transfers: 4
+
+1 - WALK:
+Walk from stop 1732 to stop 1785
+Start: 13:18:17, End: 13:35:30
+Walking time: 17 min 13 s
+
+2 - BUS/TRAIN:
+Board stop 1785; Get down at stop 1859
+Start: 13:36:54, End: 14:35:14
+Transit time: 58 min 20 s
+
+3 - WALK:
+Walk from stop 1859 to stop 30221
+Start: 14:35:14, End: 14:48:24
+Walking time: 13 min 10 s
+
+4 - BUS/TRAIN:
+Board stop 30221; Get down at stop 30200
+Start: 14:49:30, End: 15:10:30
+Transit time: 21 min 0 s
+
+5 - WALK:
+Walk from stop 30200 to stop 41030
+Start: 15:10:30, End: 15:10:30
+Walking time: 0 min 0 s
+
+============================================
+
+Source stop: 5514
+Dest stop: 10223
+Departure time: 15:52:02
+Arrival time: 17:34:40
+Transfers: 4
+
+1 - BUS/TRAIN:
+Board stop 5514; Get down at stop 450
+Start: 15:53:09, End: 16:00:31
+Transit time: 7 min 22 s
+
+2 - BUS/TRAIN:
+Board stop 450; Get down at stop 494
+Start: 16:03:19, End: 16:43:21
+Transit time: 40 min 2 s
+
+3 - WALK:
+Walk from stop 494 to stop 10237
+Start: 16:43:21, End: 17:00:47
+Walking time: 17 min 26 s
+
+4 - WALK:
+Walk from stop 10237 to stop 10230
+Start: 17:00:47, End: 17:17:45
+Walking time: 16 min 58 s
+
+5 - WALK:
+Walk from stop 10230 to stop 10223
+Start: 17:17:45, End: 17:34:40
+Walking time: 16 min 55 s
+
+============================================
+
+Source stop: 12422
+Dest stop: 40150
+Departure time: 10:59:00
+No path found.
+============================================
+
+Source stop: 9323
+Dest stop: 5350
+Departure time: 12:04:31
+Arrival time: 13:21:21
+Transfers: 3
+
+1 - WALK:
+Walk from stop 9323 to stop 10206
+Start: 12:04:31, End: 12:20:52
+Walking time: 16 min 21 s
+
+2 - WALK:
+Walk from stop 10206 to stop 11320
+Start: 12:20:52, End: 12:38:12
+Walking time: 17 min 20 s
+
+3 - BUS/TRAIN:
+Board stop 11320; Get down at stop 18580
+Start: 12:41:19, End: 13:18:06
+Transit time: 36 min 47 s
+
+4 - WALK:
+Walk from stop 18580 to stop 5350
+Start: 13:18:06, End: 13:21:21
+Walking time: 3 min 15 s
+
+============================================
+
+Source stop: 4941
+Dest stop: 3164
+Departure time: 11:06:27
+Arrival time: 12:29:28
+Transfers: 4
+
+1 - WALK:
+Walk from stop 4941 to stop 30067
+Start: 11:06:27, End: 11:23:02
+Walking time: 16 min 35 s
+
+2 - BUS/TRAIN:
+Board stop 30067; Get down at stop 30290
+Start: 11:24:00, End: 11:49:30
+Transit time: 25 min 30 s
+
+3 - WALK:
+Walk from stop 30290 to stop 450
+Start: 11:49:30, End: 11:53:28
+Walking time: 3 min 58 s
+
+4 - BUS/TRAIN:
+Board stop 450; Get down at stop 14840
+Start: 11:57:21, End: 12:27:14
+Transit time: 29 min 53 s
+
+5 - WALK:
+Walk from stop 14840 to stop 3164
+Start: 12:27:14, End: 12:29:28
+Walking time: 2 min 14 s
+
+============================================
+
+Source stop: 6166
+Dest stop: 18096
+Departure time: 13:10:57
+Arrival time: 14:58:19
+Transfers: 3
+
+1 - BUS/TRAIN:
+Board stop 6166; Get down at stop 17179
+Start: 13:11:54, End: 14:07:20
+Transit time: 55 min 26 s
+
+2 - WALK:
+Walk from stop 17179 to stop 615
+Start: 14:07:20, End: 14:23:55
+Walking time: 16 min 35 s
+
+3 - BUS/TRAIN:
+Board stop 615; Get down at stop 15296
+Start: 14:24:11, End: 14:53:08
+Transit time: 28 min 57 s
+
+4 - WALK:
+Walk from stop 15296 to stop 18096
+Start: 14:53:08, End: 14:58:19
+Walking time: 5 min 11 s
+
+============================================
+
+Source stop: 8012
+Dest stop: 60009
+Departure time: 16:54:30
+Arrival time: 17:18:39
+Transfers: 1
+
+1 - WALK:
+Walk from stop 8012 to stop 6505
+Start: 16:54:30, End: 17:10:53
+Walking time: 16 min 23 s
+
+2 - WALK:
+Walk from stop 6505 to stop 60009
+Start: 17:10:53, End: 17:18:39
+Walking time: 7 min 46 s
+
+============================================
+
+Source stop: 9224
+Dest stop: 7089
+Departure time: 15:30:55
+No path found.
+============================================
+
+Source stop: 12625
+Dest stop: 6138
+Departure time: 13:44:34
+No path found.
+============================================
+
+Source stop: 14835
+Dest stop: 30208
+Departure time: 15:07:53
+Arrival time: 15:41:18
+Transfers: 4
+
+1 - WALK:
+Walk from stop 14835 to stop 3150
+Start: 15:07:53, End: 15:15:05
+Walking time: 7 min 12 s
+
+2 - WALK:
+Walk from stop 3150 to stop 17632
+Start: 15:15:05, End: 15:18:01
+Walking time: 2 min 56 s
+
+3 - WALK:
+Walk from stop 17632 to stop 17419
+Start: 15:18:01, End: 15:24:44
+Walking time: 6 min 43 s
+
+4 - WALK:
+Walk from stop 17419 to stop 30
+Start: 15:24:44, End: 15:31:57
+Walking time: 7 min 13 s
+
+5 - WALK:
+Walk from stop 30 to stop 30208
+Start: 15:31:57, End: 15:41:18
+Walking time: 9 min 21 s
+
+============================================
+
+Source stop: 14708
+Dest stop: 12165
+Departure time: 13:01:29
+No path found.
+============================================
+
