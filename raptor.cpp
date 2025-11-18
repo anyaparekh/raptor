@@ -3,6 +3,7 @@
 #include <map>
 #include <set>
 #include <cstdio>
+#include <omp.h>
 
 using namespace std;
 
@@ -17,20 +18,38 @@ string earliest_trip(const string& route_id, int board_stop, int board_time) {
     string best_trip = "";
     int best_dep = numeric_limits<int>::max();
 
-    for (size_t i = 0; i < RouteTrips[route_id].size(); i++) {
-        const string& trip_id = RouteTrips[route_id][i];
-        const auto& stops = Trips[trip_id].stops;
-        if (stops.count(board_stop) == 0)
-            continue;
-        int dep = stops.at(board_stop).second;
-        if (dep >= board_time && dep < best_dep) {
-            best_dep = dep;
-            best_trip = trip_id;
+    omp_set_num_threads(4);
+
+    #pragma omp parallel
+    {
+        string local_best_trip = "";
+        int local_best_dep = numeric_limits<int>::max();
+
+        #pragma omp for schedule(dynamic) nowait
+        for (size_t i = 0; i < RouteTrips[route_id].size(); i++) {
+            const string &trip_id = RouteTrips[route_id][i];
+            const auto &stops = Trips[trip_id].stops;
+            if (stops.count(board_stop) == 0) {
+                continue;
+            }
+            int dep = stops.at(board_stop).second;
+            if (dep >= board_time && dep < local_best_dep) {
+                local_best_dep = dep;
+                local_best_trip = trip_id;
+            }
+        }
+
+        #pragma omp critical
+        {
+            if (!local_best_trip.empty() && local_best_dep < best_dep) {
+                best_dep = local_best_dep;
+                best_trip = local_best_trip;
+            }
         }
     }
-
     return best_trip;
 }
+
 
 pair<int, vector<PathStep>> raptor(int source_stop, int dest_stop, int departure_time, int K) {
     unordered_map<int, vector<int>> stop_arrival_times;

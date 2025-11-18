@@ -1,0 +1,194 @@
+Source stop: 12154
+Dest stop: 2912
+Departure time: 11:29:01
+Arrival time: 11:59:51
+Transfers: 1
+
+1 - WALK:
+Walk from stop 12154 to stop 14978
+Start: 11:29:01, End: 11:42:33
+Walking time: 13 min 32 s
+
+2 - WALK:
+Walk from stop 14978 to stop 2912
+Start: 11:42:33, End: 11:59:51
+Walking time: 17 min 18 s
+
+============================================
+
+Source stop: 11069
+Dest stop: 11271
+Departure time: 13:49:50
+Arrival time: 14:00:15
+Transfers: 0
+
+1 - WALK:
+Walk from stop 11069 to stop 11271
+Start: 13:49:50, End: 14:00:15
+Walking time: 10 min 25 s
+
+============================================
+
+Source stop: 18356
+Dest stop: 12458
+Departure time: 14:30:45
+No path found.
+============================================
+
+Source stop: 10020
+Dest stop: 17190
+Departure time: 16:39:36
+No path found.
+============================================
+
+Source stop: 5046
+Dest stop: 987
+Departure time: 15:55:21
+Arrival time: 18:25:33
+Transfers: 3
+
+1 - WALK:
+Walk from stop 5046 to stop 6155
+Start: 15:55:21, End: 16:10:44
+Walking time: 15 min 23 s
+
+2 - BUS/TRAIN:
+Board stop 6155; Get down at stop 17180
+Start: 16:12:19, End: 17:16:11
+Transit time: 63 min 52 s
+
+3 - WALK:
+Walk from stop 17180 to stop 933
+Start: 17:16:11, End: 17:32:27
+Walking time: 16 min 16 s
+
+4 - BUS/TRAIN:
+Board stop 933; Get down at stop 987
+Start: 17:34:37, End: 18:25:33
+Transit time: 50 min 56 s
+
+============================================
+
+Source stop: 6124
+Dest stop: 11539
+Departure time: 13:10:48
+Arrival time: 17:42:55
+Transfers: 4
+
+1 - WALK:
+Walk from stop 6124 to stop 6146
+Start: 13:10:48, End: 13:28:13
+Walking time: 17 min 25 s
+
+2 - BUS/TRAIN:
+Board stop 6146; Get down at stop 4948
+Start: 14:37:07, End: 16:25:01
+Transit time: 107 min 54 s
+
+3 - WALK:
+Walk from stop 4948 to stop 4797
+Start: 16:25:01, End: 16:42:45
+Walking time: 17 min 44 s
+
+4 - BUS/TRAIN:
+Board stop 4797; Get down at stop 4844
+Start: 16:49:52, End: 17:20:08
+Transit time: 30 min 16 s
+
+5 - BUS/TRAIN:
+Board stop 4844; Get down at stop 11539
+Start: 17:25:51, End: 17:42:55
+Transit time: 17 min 4 s
+
+============================================
+
+Source stop: 5070
+Dest stop: 7996
+Departure time: 17:41:52
+Arrival time: 18:39:16
+Transfers: 3
+
+1 - BUS/TRAIN:
+Board stop 5070; Get down at stop 5084
+Start: 17:56:00, End: 18:02:43
+Transit time: 6 min 43 s
+
+2 - BUS/TRAIN:
+Board stop 5084; Get down at stop 8175
+Start: 18:04:31, End: 18:10:34
+Transit time: 6 min 3 s
+
+3 - WALK:
+Walk from stop 8175 to stop 2212
+Start: 18:10:34, End: 18:26:06
+Walking time: 15 min 32 s
+
+4 - WALK:
+Walk from stop 2212 to stop 7996
+Start: 18:26:06, End: 18:39:16
+Walking time: 13 min 10 s
+
+============================================
+
+Source stop: 9698
+Dest stop: 8441
+Departure time: 13:29:30
+No path found.
+============================================
+
+Source stop: 16079
+Dest stop: 2458
+Departure time: 12:41:17
+Arrival time: 14:39:52
+Transfers: 3
+
+1 - WALK:
+Walk from stop 16079 to stop 32
+Start: 12:41:17, End: 12:57:47
+Walking time: 16 min 30 s
+
+2 - BUS/TRAIN:
+Board stop 32; Get down at stop 73
+Start: 12:59:20, End: 13:29:54
+Transit time: 30 min 34 s
+
+3 - BUS/TRAIN:
+Board stop 73; Get down at stop 2260
+Start: 13:30:03, End: 14:28:54
+Transit time: 58 min 51 s
+
+4 - WALK:
+Walk from stop 2260 to stop 2458
+Start: 14:28:54, End: 14:39:52
+Walking time: 10 min 58 s
+
+============================================
+
+Source stop: 4899
+Dest stop: 7113
+Departure time: 14:17:48
+Arrival time: 15:43:43
+Transfers: 3
+
+1 - WALK:
+Walk from stop 4899 to stop 1037
+Start: 14:17:48, End: 14:34:13
+Walking time: 16 min 25 s
+
+2 - BUS/TRAIN:
+Board stop 1037; Get down at stop 18396
+Start: 14:34:16, End: 15:07:30
+Transit time: 33 min 14 s
+
+3 - BUS/TRAIN:
+Board stop 18396; Get down at stop 5223
+Start: 15:07:44, End: 15:34:10
+Transit time: 26 min 26 s
+
+4 - WALK:
+Walk from stop 5223 to stop 7113
+Start: 15:34:10, End: 15:43:43
+Walking time: 9 min 33 s
+
+============================================
+
