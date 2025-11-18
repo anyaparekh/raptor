@@ -59,10 +59,6 @@ void load_stop_times(const string &path) {
         entry.arrival_time = rows[i]["arrival_time"].get<>();
         entry.departure_time = rows[i]["departure_time"].get<>();
         entry.stop_id = rows[i]["stop_id"].get<int>();
-        entry.stop_sequence = rows[i]["stop_sequence"].get<int>();
-        entry.stop_headsign = rows[i]["stop_headsign"].get<>();
-        entry.pickup_type = rows[i]["pickup_type"].get<>();
-        entry.shape_dist_traveled = rows[i]["shape_dist_traveled"].get<>();
 
         df_stop_times[i] = move(entry);
     }
@@ -80,14 +76,7 @@ void load_trips(const string &path) {
     for (size_t i = 0; i < rows.size(); ++i) {
         TripHeaders entry;
         entry.route_id  = rows[i]["route_id"].get<>();
-        entry.service_id = rows[i]["service_id"].get<>();
         entry.trip_id = rows[i]["trip_id"].get<>();
-        entry.direction_id = rows[i]["direction_id"].get<>();
-        entry.block_id = rows[i]["block_id"].get<>();
-        entry.shape_id = rows[i]["shape_id"].get<>();
-        entry.direction = rows[i]["direction"].get<>();
-        entry.wheelchair_accessible = rows[i]["wheelchair_accessible"].get<>();
-        entry.schd_trip_id = rows[i]["schd_trip_id"].get<>();
 
         df_trips[i] = move(entry);
     }
@@ -105,12 +94,6 @@ void load_routes(const string &path) {
     for (size_t i = 0; i < rows.size(); ++i) {
         RouteHeaders entry;
         entry.route_id = rows[i]["route_id"].get<>();
-        entry.route_short_name = rows[i]["route_short_name"].get<>();
-        entry.route_long_name = rows[i]["route_long_name"].get<>();
-        entry.route_type = rows[i]["route_type"].get<>();
-        entry.route_url = rows[i]["route_url"].get<>();
-        entry.route_color = rows[i]["route_color"].get<>();
-        entry.route_text_color = rows[i]["route_text_color"].get<>();
 
         df_routes[i] = move(entry);
     }
@@ -129,14 +112,8 @@ void load_stops(const string &path) {
         StopHeaders entry;
 
         entry.stop_id = rows[i]["stop_id"].get<int>();
-        entry.stop_code = rows[i]["stop_code"].get<>();
-        entry.stop_name = rows[i]["stop_name"].get<>();
-        entry.stop_desc = rows[i]["stop_desc"].get<>();
         entry.stop_lat = rows[i]["stop_lat"].get<double>();
         entry.stop_lon = rows[i]["stop_lon"].get<double>();
-        entry.location_type = rows[i]["location_type"].get<>();
-        entry.parent_station = rows[i]["parent_station"].get<>();
-        entry.wheelchair_boarding = rows[i]["wheelchair_boarding"].get<>();
 
         df_stops[i] = move(entry);
     }
@@ -156,7 +133,6 @@ static vector<MergedRow> merge_stop_times_trips() {
         entry.trip_id = st.trip_id;
         entry.route_id = trip_to_route[st.trip_id];
         entry.stop_id = st.stop_id;
-        entry.stop_sequence = st.stop_sequence;
         entry.arrival_time = st.arrival_time;
         entry.departure_time = st.departure_time;
         merged[i] = move(entry);
@@ -183,13 +159,6 @@ void build_trips() {
     for (auto &t : df_trips) {
         TripInfo entry;
         entry.info["route_id"] = t.route_id;
-        entry.info["service_id"] = t.service_id;
-        entry.info["direction_id"] = t.direction_id;
-        entry.info["block_id"] = t.block_id;
-        entry.info["shape_id"] = t.shape_id;
-        entry.info["direction"] = t.direction;
-        entry.info["wheelchair_accessible"] = t.wheelchair_accessible;
-        entry.info["schd_trip_id"] = t.schd_trip_id;
         Trips[t.trip_id] = entry;
     }
     

@@ -45,7 +45,7 @@ int main(int argc, char* argv[]) {
     }
 
     auto build_time_start = chrono::high_resolution_clock::now();
-    build_all("gtfs-data");
+    build_all("gtfs-data-newyork2");
     auto build_time_end = chrono::high_resolution_clock::now();
 
     cout << chrono::duration<double>(build_time_end - build_time_start).count() << endl;
