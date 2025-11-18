@@ -67,22 +67,61 @@ pair<int, vector<PathStep>> raptor(int source_stop, int dest_stop, int departure
 
     vector<int> marked_stops = { source_stop };
 
+    omp_set_num_threads(4);
+
     for (int k = 1; k < K+1; ++k) {
         unordered_map<string,int> Q;
 
-        for (int marked_stop : marked_stops) {
+        if (marked_stops.size() <= 200) {
+            for (int marked_stop : marked_stops) {
+                for (const string& route_id : StopRoutes[marked_stop]) {
+                    const auto& stops = RouteStops[route_id];
+                    auto marked_stop_it = std::find(stops.begin(), stops.end(), marked_stop);
 
-            for (const string& route_id : StopRoutes[marked_stop]) {
-                const auto& stops = RouteStops[route_id];
-                auto marked_stop_it = std::find(stops.begin(), stops.end(), marked_stop);
+                    if (marked_stop_it == stops.end())
+                        continue;
 
-                if (marked_stop_it == stops.end())
-                    continue;
+                    int marked_stop_idx = static_cast<int>(marked_stop_it - stops.begin());
 
-                int marked_stop_idx = static_cast<int>(marked_stop_it - stops.begin());
+                    if (!Q.count(route_id) || marked_stop_idx < Q[route_id]) {
+                        Q[route_id] = marked_stop_idx;
+                    }
+                }
+            }
+        } else {
+            #pragma omp parallel
+            {
+                unordered_map<string,int> local_Q;
 
-                if (!Q.count(route_id) || marked_stop_idx < Q[route_id]) {
-                    Q[route_id] = marked_stop_idx;
+                #pragma omp for schedule(dynamic)
+                for (int i = 0; i < (int)marked_stops.size(); i++) {
+                    int marked_stop = marked_stops[i];
+
+                    for (const string& route_id : StopRoutes[marked_stop]) {
+                        const auto& stops = RouteStops[route_id];
+                        auto marked_stop_it = std::find(stops.begin(), stops.end(), marked_stop);
+
+                        if (marked_stop_it == stops.end())
+                            continue;
+
+                        int marked_stop_idx = static_cast<int>(marked_stop_it - stops.begin());
+
+                        if (!local_Q.count(route_id) || marked_stop_idx < local_Q[route_id]) {
+                            local_Q[route_id] = marked_stop_idx;
+                        }
+                    }
+                }
+
+                #pragma omp critical
+                {
+                    for (const auto& local_Q_routestop : local_Q) {
+                        const string& route_id = local_Q_routestop.first;
+                        int marked_stop_idx = local_Q_routestop.second;
+
+                        if (!Q.count(route_id) || marked_stop_idx < Q[route_id]) {
+                            Q[route_id] = marked_stop_idx;
+                        }
+                    }
                 }
             }
         }
