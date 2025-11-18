@@ -52,8 +52,13 @@ string earliest_trip(const string& route_id, int board_stop, int board_time) {
 
 
 pair<int, vector<PathStep>> raptor(int source_stop, int dest_stop, int departure_time, int K) {
+    const int total_stops = StopCoords.size();
+
     unordered_map<int, vector<int>> stop_arrival_times;
     unordered_map<int, int> earliest_stop_arrival_times;
+
+    stop_arrival_times.reserve(total_stops);
+    earliest_stop_arrival_times.reserve(total_stops);
 
     for (const auto& kv : StopCoords) {
         int stop = kv.first;
@@ -63,6 +68,7 @@ pair<int, vector<PathStep>> raptor(int source_stop, int dest_stop, int departure
 
     stop_arrival_times[source_stop][0] = departure_time;
     earliest_stop_arrival_times[source_stop] = departure_time;
+
     map<pair<int,int>, TakenStep> route_taken;
 
     unordered_set<int> marked_stops = { source_stop };
@@ -202,11 +208,9 @@ pair<int, vector<PathStep>> raptor(int source_stop, int dest_stop, int departure
         return { -1, {} };
     }
 
-    vector<int> round_times_for_dest_stop = stop_arrival_times[dest_stop];
-
     int rounds_taken = -1;
     for (int k = 0; k < K + 1; ++k) {
-        if (round_times_for_dest_stop[k] == best_time) {
+        if (stop_arrival_times[dest_stop][k] == best_time) {
             rounds_taken = k;
             break;
         }
@@ -241,8 +245,7 @@ pair<int, vector<PathStep>> raptor(int source_stop, int dest_stop, int departure
             step.trip_id = mode;
             step.walk_time = 0;
 
-            TripInfo& ti = Trips[mode];
-            const auto& stops_map = ti.stops;
+            const auto& stops_map = Trips[mode].stops;
 
             if (stops_map.count(prev_stop) && stops_map.count(curr_stop)) {
                 step.start_time = stops_map.at(prev_stop).second;
