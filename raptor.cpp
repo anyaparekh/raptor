@@ -65,7 +65,7 @@ pair<int, vector<PathStep>> raptor(int source_stop, int dest_stop, int departure
     earliest_stop_arrival_times[source_stop] = departure_time;
     map<pair<int,int>, TakenStep> route_taken;
 
-    vector<int> marked_stops = { source_stop };
+    unordered_set<int> marked_stops = { source_stop };
 
     omp_set_num_threads(4);
 
@@ -89,13 +89,15 @@ pair<int, vector<PathStep>> raptor(int source_stop, int dest_stop, int departure
                 }
             }
         } else {
+            vector<int> marked_stops_vec(marked_stops.begin(), marked_stops.end());
+
             #pragma omp parallel
             {
                 unordered_map<string,int> local_Q;
 
                 #pragma omp for schedule(dynamic)
-                for (int i = 0; i < (int)marked_stops.size(); i++) {
-                    int marked_stop = marked_stops[i];
+                for (int i = 0; i < (int)marked_stops_vec.size(); i++) {
+                    int marked_stop = marked_stops_vec[i];
 
                     for (const string& route_id : StopRoutes[marked_stop]) {
                         const auto& stops = RouteStops[route_id];
@@ -159,23 +161,17 @@ pair<int, vector<PathStep>> raptor(int source_stop, int dest_stop, int departure
 
                     route_taken[{next_stop, k}] = { boarding_stop, k - 1, current_trip, 0 };
 
-                    if (find(marked_stops.begin(), marked_stops.end(), next_stop) == marked_stops.end()) {
-                        marked_stops.push_back(next_stop);
-                    }
+                    marked_stops.insert(next_stop);
                 }
             }
         }
 
-        vector<int> marked_stops_temp;
+        unordered_set<int> marked_stops_temp;
         for (int stop : marked_stops) {
-            if (Transfers.find(stop) == Transfers.end()) {
-                continue;
-            }
+            if (Transfers.find(stop) == Transfers.end()) continue;
 
             int base_prev_time = stop_arrival_times[stop][k - 1];
-            if (base_prev_time == numeric_limits<int>::max()) {
-                continue;
-            }
+            if (base_prev_time == numeric_limits<int>::max()) continue;
 
             for (const auto& w : Transfers[stop]) {
                 int walkable_stop = w.first;
@@ -187,15 +183,13 @@ pair<int, vector<PathStep>> raptor(int source_stop, int dest_stop, int departure
                     earliest_stop_arrival_times[walkable_stop] = min(earliest_stop_arrival_times[walkable_stop], curr_walk_arr_time);
 
                     route_taken[{walkable_stop, k}] = { stop, k - 1, "walk", walk_time };
-
-                    if (find(marked_stops_temp.begin(), marked_stops_temp.end(), walkable_stop) == marked_stops_temp.end()) {
-                        marked_stops_temp.push_back(walkable_stop);
-                    }
+                    
+                    marked_stops_temp.insert(walkable_stop);
                 }
             }
         }
 
-        marked_stops.insert(marked_stops.end(), marked_stops_temp.begin(), marked_stops_temp.end());
+        marked_stops.insert(marked_stops_temp.begin(), marked_stops_temp.end());
 
         if (marked_stops.empty()) {
             break;
