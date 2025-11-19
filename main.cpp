@@ -128,14 +128,20 @@ int main(int argc, char* argv[]) {
     // Make sure to unzip gtfs zip
     // const char* gtfs_zip = "gtfs-data.zip";
     // const string out_folder = "gtfs-data/";
-
+    bool run_tests = false;
     int iterations = 500;
 
-    if (argc >= 2) {
-        try {
-            iterations = stoi(argv[1]);
-        } catch (...) {
-            iterations = 500;
+    for (int i = 1; i < argc; ++i) {
+        string arg = argv[i];
+        if (arg == "--run-tests") {
+            run_tests = true;
+        }
+        else {
+            try {
+                iterations = stoi(arg);
+            } catch (...) {
+                iterations = 500;
+            }
         }
     }
 
@@ -153,7 +159,9 @@ int main(int argc, char* argv[]) {
 
     cout << chrono::duration<double>(build_time_end - build_time_start).count() << endl;
 
-    conduct_unit_tests(dataset);
+    if (run_tests) {
+        conduct_unit_tests(dataset);
+    }
 
     vector<int> stop_ids;
     stop_ids.reserve(StopCoords.size());
