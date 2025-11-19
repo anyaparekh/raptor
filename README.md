@@ -1,5 +1,19 @@
+# RAPTOR Reimplementation
+
+The main branch contains all optimizations. To run each of the optimizations, checkout to its branch!
+## Optimization Branches
+
+| Branch | Description |
+|:-------|:-------------|
+| **baseline** | The original RAPTOR algorithm, as specified in the [research paper](https://www.microsoft.com/en-us/research/wp-content/uploads/2012/01/raptor_alenex.pdf). |
+| **opt-1** | Optimizing GTFS preprocessing |
+| **opt-2** | Parallelizing earliest trip selection |
+| **opt-3** | Parallelizing Q-Route scanning |
+| **opt-4** | Changing vector-based membership to set-based membership |
+
+
 ## Command Line Instructions
-Run the following commands and add custom parameters to run the RAPTOR algorithm
+Run the following commands to build and run the full RAPTOR algorithm (check out the notes section for information on custom parameters and the unit-test suite).
 
 ```
 make clean
