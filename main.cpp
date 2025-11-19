@@ -67,11 +67,13 @@ void conduct_unit_tests(string dataset) {
     size_t trips_file_rows = count_csv_rows(dataset + "/trips.txt");
     size_t routes_file_rows = count_csv_rows(dataset + "/routes.txt");
 
-    assert(stops_file_rows == df_stops.size());
     assert(stops_file_rows == StopCoords.size());
     assert(stops_file_rows == Transfers.size());
-    assert(trips_file_rows == df_trips.size());
-    assert(routes_file_rows == df_routes.size());
+    assert(stops_file_rows >= StopRoutes.size());
+    assert(trips_file_rows == Trips.size());
+    assert(routes_file_rows >= RouteStops.size());
+    assert(routes_file_rows >= RouteTrips.size());
+    
 
     cout << "Assert passed - CSV row counts match data structures." << endl;
 
