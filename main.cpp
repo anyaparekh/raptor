@@ -103,6 +103,31 @@ void conduct_unit_tests(string dataset) {
     }
     cout << "Assert passed - StopRoutes entries validated for 5 random stops\n";
     
+    vector<std::string> route_ids;
+    route_ids.reserve(RouteTrips.size());
+    for (const auto& [route_id, trips] : RouteTrips) {
+        route_ids.push_back(route_id);
+    }
+
+    uniform_int_distribution<size_t> dist3(0, route_ids.size() - 1);
+
+    unordered_set<std::string> rand_routes;
+    for (int i = 0; i < 5; ++i) {
+        rand_routes.insert(route_ids[dist3(gen)]);
+    }
+
+    for (const auto& route_id : rand_routes) {
+        const auto& trips = RouteTrips[route_id];
+        assert(!trips.empty());
+
+        for (const auto& trip_id : trips) {
+            assert(Trips.find(trip_id) != Trips.end());
+            const auto& trip_stops = Trips.at(trip_id).stops;
+            assert(!trip_stops.empty());
+        }
+    }
+    cout << "Assert passed - RouteTrips entries validated for 5 random routes\n";
+
     vector<string> routes;
     for (const auto& route : RouteStops) {
         if (!route.second.empty()) {
@@ -131,20 +156,34 @@ int main(int argc, char* argv[]) {
     // const char* gtfs_zip = "gtfs-data.zip";
     // const string out_folder = "gtfs-data/";
     bool run_tests = false;
+    string source = "";
+    string dest = "";
+    string departure = "";
+    string dataset = "gtfs-data";
+    int argIndex = 1;
     int iterations = 500;
+    
+    if (argIndex < argc) {
+        try {
+            iterations = stoi(argv[argIndex]);
+            ++argIndex;
+        } catch (...) { }
+    }
 
-    for (int i = 1; i < argc; ++i) {
-        string arg = argv[i];
+    while (argIndex < argc) {
+        string arg = argv[argIndex];
         if (arg == "--run-tests") {
             run_tests = true;
+        } else if (arg == "--dataset" && argIndex + 1 < argc) {
+            dataset = argv[++argIndex];
+        } else if (arg == "--source" && argIndex + 1 < argc) {
+            source = argv[++argIndex];
+        } else if (arg == "--dest" && argIndex + 1 < argc) {
+            dest = argv[++argIndex];
+        } else if (arg == "--departure" && argIndex + 1 < argc) {
+            departure = argv[++argIndex];
         }
-        else {
-            try {
-                iterations = stoi(arg);
-            } catch (...) {
-                iterations = 500;
-            }
-        }
+        ++argIndex;
     }
 
     std::string filename = "raptor_results_" + std::to_string(iterations) + ".txt";
@@ -153,7 +192,6 @@ int main(int argc, char* argv[]) {
     if (!fout.is_open()) {
         return 1;
     }
-    string dataset = "gtfs-data-newyork2";
 
     auto build_time_start = chrono::high_resolution_clock::now();
     build_all(dataset);
@@ -178,11 +216,11 @@ int main(int argc, char* argv[]) {
 
     auto raptor_time_start = chrono::high_resolution_clock::now();
     for (int iter = 0; iter < iterations; ++iter) {
-        int dep_time = dep_dist(gen);
+        int dep_time = departure.empty() ? dep_dist(gen) : stoi(departure);
         int K = 5;
 
-        int source_stop = stop_ids[distrib(gen)];
-        int dest_stop = stop_ids[distrib(gen)];
+        int source_stop = source.empty() ? stop_ids[distrib(gen)] : stoi(source);
+        int dest_stop = dest.empty() ? stop_ids[distrib(gen)] : stoi(dest);
         while (dest_stop == source_stop) {
             dest_stop = stop_ids[distrib(gen)];
         }
